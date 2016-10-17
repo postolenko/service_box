@@ -81,6 +81,19 @@ $(function() {
 
 });
 
+
+$(function() {
+
+    $(".close-search").click(function() {
+
+        $(".fade-search-box").animate({"height" : 0 + "px"} , 300);
+
+        $(".fade-search-box").fadeOut(300);
+
+    });
+
+});
+
  // ---------------------------------------------------------
 
     $(function() {
