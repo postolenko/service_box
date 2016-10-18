@@ -2870,7 +2870,7 @@ p.quote:before {
             display: table-cell;
             vertical-align: top;
             /*padding: 9px 0;*/
-            padding: 9px 16px;
+            /*padding: 9px 16px;*/
             width: 186px;
         }
 
@@ -2934,7 +2934,7 @@ p.quote:before {
         .card-page .tab .row-col-2 {
             display: table-cell;
             vertical-align: top;
-            padding: 9px 0;
+            /*padding: 9px 0;*/
             /*width: 186px;*/
         }
 
@@ -3019,7 +3019,7 @@ p.quote:before {
             border-bottom: 1px dotted #dcdcdc;
         }
 
-        .row-line .row-inner-box {
+        .row-inner-box {
             padding: 5px 16px;
         }
 
