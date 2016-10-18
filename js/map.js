@@ -41,6 +41,14 @@ if( document.getElementsByClassName("map-box")[0] ) {
 					zoom: 14
 				});
 
+				map = new google.maps.Map(document.getElementById('map2'), {
+					center: {lat: 55.895924, lng: 37.6017443},
+					// 59.9711252,30.2972661
+					scrollwheel: false,
+					scaleControl: false,
+					zoom: 14
+				});
+
 				marker = new google.maps.Marker({
 					map: map,
 					draggable: false,

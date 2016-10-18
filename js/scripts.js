@@ -46,21 +46,21 @@ $(function() {
 
     for (countItemsTabMenuFor = 0; countItemsTabMenuFor <= countItemsTabMenu; countItemsTabMenuFor++) {
 
-            if( $(".tab_link:eq("+ countItemsTabMenuFor +")").hasClass("active") ) {
+        if( $(".tab_link:eq("+ countItemsTabMenuFor +")").hasClass("active") ) {
 
-                dataAttrTab = $(".tab_link:eq("+ countItemsTabMenuFor +")").attr("for");
+            dataAttrTab = $(".tab_link:eq("+ countItemsTabMenuFor +")").attr("for");
 
-                for (countItemsTabMenuFor = 0; countItemsTabMenuFor <= countItemsTabMenu; countItemsTabMenuFor++) {
+            for (countItemsTabMenuFor = 0; countItemsTabMenuFor <= countItemsTabMenu; countItemsTabMenuFor++) {
 
-                    if ( $(".tab:eq("+ countItemsTabMenuFor +")").attr("id") == dataAttrTab ) {
+                if ( $(".tab:eq("+ countItemsTabMenuFor +")").attr("id") == dataAttrTab ) {
 
-                        $(".tab:eq("+ countItemsTabMenuFor +")").addClass("active");
-
-                    }
+                    $(".tab:eq("+ countItemsTabMenuFor +")").addClass("active");
 
                 }
 
             }
+
+        }
 
     }
 
