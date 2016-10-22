@@ -3503,7 +3503,7 @@ p.quote:before {
 
         .profile-article-content {
             margin: -3px 0 0 0;
-            padding: 10px;
+            padding: 10px 15px;
             border-left: 1px solid #dcdcdc;
             border-bottom: 1px solid #dcdcdc;
             border-right: 1px solid #dcdcdc;
