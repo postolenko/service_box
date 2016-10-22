@@ -1434,7 +1434,7 @@ p.quote:before {
 
         .main-content.width-82 {
             width: 82%;
-            padding: 0 0 0 2%;
+            padding: 0 0 0 3%;
         }
 
         /*---  Sidebar  ---*/
@@ -3211,24 +3211,33 @@ p.quote:before {
         }
 
         .profile .tabs .tab-links-list {
-            width: 100%;
-            margin: 2px 0 0 0;
+            width: 102%;
+            margin: 2px 0 0 -1%;
             padding: 0;
             overflow: hidden;
         }
 
         .profile .tabs .tab-links-box {
-            width: 102%;
-            margin: 0 0 5px -1%;
+            display: table;
+            /*display: block;*/
+            width: 100%;
+            margin: 0 0 5px 0;
         }
 
         .profile .tabs .tab-link-item {
-            width: 24.5%;
-            padding: 10px .6%;
+            display: table-cell;
+            vertical-align: top;
+            /*min-width: 17%;*/
+            min-width: 170px;
+            width: auto;
+            padding: 10px 1%;
         }
 
         .profile .tabs .tab_link {
-            padding: 7px 2px 9px 2px;
+            display: block;
+            width: auto;
+            text-align: center;
+            padding: 7px 10px 9px 10px;
         }
 
         .profile .tabs .tab_link:before,
@@ -3247,7 +3256,7 @@ p.quote:before {
         }
 
         .profile .tabs-content {
-            padding: 5px 1%;
+            padding: 5px 0;
         }
 
 
@@ -3364,7 +3373,7 @@ p.quote:before {
 
         .profile .attentive-message {
             display: block;
-            margin: 10px 0;
+            margin: 10px 0 15px 0;
             padding: 10px;
             background: rgba(253, 253, 253, 1);
             border: 1px solid #bb5b6b;
