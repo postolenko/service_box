@@ -6,3 +6,5 @@
 # http://postolenko.github.io/service_box/account_my_ads.html
 # http://postolenko.github.io/service_box/account_my_questions.html
 # http://postolenko.github.io/service_box/account_you_havnt_questions.html
+# http://postolenko.github.io/service_box/account_voprosi_po_obyavleniam.html
+# http://postolenko.github.io/service_box/account_voprosi_po_obyavleniam_2.html
