@@ -3587,7 +3587,64 @@ p.quote:before {
             margin: 13px 0 0 0;
         }
 
+        .profile-article-content .article-row:after {
+            display: block;
+            content: "";
+            width: 104%;
+            margin: 0 0 0 -2%;
+            border-bottom: 1px dotted #dcdcdc;
+        }
 
+        .profile-article-content .article-row:last-child:after {
+            display: none;
+        }
+
+        .profile-article-content h3 {
+            font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 400;
+            color: #171717;
+        }
+
+        .two-cols .col {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        .two-cols .col-1 {
+            padding: 0 1.5% 0 0;
+        }
+
+        .two-cols .col-2 {
+            padding: 0 0 0 1.5%;
+        }
+
+        .profile-article-content .three-cols .col {
+            display: inline-block;
+            vertical-align: top;
+            width: 33.33%;
+        }
+
+        .profile-article-content .three-cols .col-1 {
+            padding: 0 1.5% 0 0;
+        }
+
+        .profile-article-content .three-cols .col-2 {
+            padding: 0 1.5%;
+        }
+
+        .profile-article-content .three-cols .col-3 {
+            padding: 0 0 0 1.5%;
+        }
+
+
+ /*---  /Мой профиль пользователь  ---*/
+
+
+
+ 
 
 
     
@@ -3606,7 +3663,7 @@ p.quote:before {
 
 
 
-        /*---  /Мой профиль пользователь  ---*/
+       
 
 
 
