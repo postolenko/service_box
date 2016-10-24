@@ -3650,6 +3650,7 @@ p.quote:before {
     .account-table.empty-table .account-table-row {
         display: block !important;
         width: 100%;
+        padding: 10px 10px;
         font-size: 0;
         line-height: 0;
     }
