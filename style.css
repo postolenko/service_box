@@ -547,7 +547,7 @@ p.quote:before {
 }
 
 .breacrumbs-list {
-    padding: 7px 1.5%;
+    padding: 11px 1.5%;
 }
 
 .breacrumbs-list li {
@@ -3628,16 +3628,20 @@ p.quote:before {
 
 
     .account-table {
-        display: table;
+        /*display: table;*/
+        display: block;
         border-collapse: collapse;
         width: 100%;
         margin: 12px 0 14px 0;
     }
 
     .account-table .account-table-row {
-        display: table-row;
+        /*display: table-row;*/
+        display: inline-block;
+        vertical-align: middle;
         width: 100%;
-        padding: 15px 10px;
+        /*padding: 15px 10px;*/
+        padding: 0 10px;
         border-right: 1px solid #dcdcdc;
         border-bottom: 1px solid #dcdcdc;
         border-left: 1px solid #dcdcdc;
@@ -3669,9 +3673,10 @@ p.quote:before {
     }
 
     .account-table-header {
-        display: table-row;
+        /*display: table-row;*/
+        display: block;
         width: 100%;
-        padding: 5px 16px;
+        padding: 0 16px;
         border: 1px solid #dcdcdc;
         -webkit-border-radius: 4px 4px 0 0;
         -moz-border-radius: 4px 4px 0 0;
@@ -3686,7 +3691,8 @@ p.quote:before {
     }
 
     .account-table .table-cell {
-        display: table-cell;
+        /*display: table-cell;*/
+        display: inline-block;
         vertical-align: middle;
         padding: 12px 0 12px 10px;
     }
@@ -3750,8 +3756,8 @@ p.quote:before {
     .table-cell a.btn-cell {
         display: inline-block;
         vertical-align: middle;
-        margin: 2px 0px;
-        padding: 2px 6px;
+        margin: 2px 1px;
+        padding: 2px 5px;
         font-family: "Myriad Pro", Arial, Verdana, sans-serif;
         font-size: 14px;
         line-height: 18px;
@@ -3983,6 +3989,11 @@ p.quote:before {
         padding: 0 5px 0 0;
     }
 
+    .my_questions.account-table .account-table-header {
+        display: table;
+        width: 100%;
+    }
+
     .my_questions.account-table .account-table-header .table-cell {
         padding: 5px 10px;
     }
@@ -4016,21 +4027,21 @@ p.quote:before {
         vertical-align: middle;
     }
 
-    .questions-table .account-table-header {
+    /*.questions-table .account-table-header {
         display: block;
         width: 100%;
-    }
+    }*/
 
-    .account-table-header .table-cell-1 {
+    .questions-table .account-table-header .table-cell-1 {
         width: 71%;
     }
 
-    .account-table-header .table-cell-2 {
+    .questions-table .account-table-header .table-cell-2 {
         width: 29%;
         text-align: right;
     }
 
-    .account-table-header .table-cell-2 a {
+    .questions-table .account-table-header .table-cell-2 a {
         text-decoration: none;
         cursor: pointer;
     }
