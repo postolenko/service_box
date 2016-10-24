@@ -3278,7 +3278,6 @@ p.quote:before {
             display: inline-block;
             vertical-align: middle;
             width: 40%;
-            /*max-width: 160px;*/
             font-family: "Myriad Pro", Arial, Verdana, sans-serif;
             font-size: 16px;
             line-height: 20px;
@@ -3400,10 +3399,6 @@ p.quote:before {
             color: #171717;
         }
 
-        .upload-box {
-            /*padding: 5px 0;*/
-        }
-
         .upload-box h5 {
             display: inline-block;
             vertical-align: middle;
@@ -3518,21 +3513,6 @@ p.quote:before {
             border-right: 1px solid #dcdcdc;
         }
 
-      /*  .profile .checkbox-box input {
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .profile .checkbox-box label {
-            display: inline-block;
-            vertical-align: middle;
-            font-family: "Myriad Pro", Arial, Verdana, sans-serif;
-            font-size: 16px;
-            line-height: 18px;
-            font-weight: 400;
-            color: #171717;
-        }*/
-
         .checkbox-box {
             position: relative;
             padding: 15px 0;
@@ -3640,11 +3620,361 @@ p.quote:before {
         }
 
 
- /*---  /Мой профиль пользователь  ---*/
+    /*---  /Мой профиль пользователь  ---*/
 
 
 
- 
+    /*---  Мои объявления  ---*/
+
+
+    .account-table {
+        display: table;
+        border-collapse: collapse;
+        width: 100%;
+        margin: 12px 0 14px 0;
+    }
+
+    .account-table .account-table-row {
+        display: table-row;
+        width: 100%;
+        padding: 15px 10px;
+        border-right: 1px solid #dcdcdc;
+        border-bottom: 1px solid #dcdcdc;
+        border-left: 1px solid #dcdcdc;
+    }
+
+    .account-table .account-table-header .table-cell {
+        padding: 5px 10px;
+    }
+
+    .account-table .table-cell.center-txt {
+        text-align: center;
+    }
+
+    .account-table-header {
+        display: table-row;
+        width: 100%;
+        padding: 5px 16px;
+        border: 1px solid #dcdcdc;
+        -webkit-border-radius: 4px 4px 0 0;
+        -moz-border-radius: 4px 4px 0 0;
+        -ms-border-radius: 4px 4px 0 0;
+        -o-border-radius: 4px 4px 0 0;
+        border-radius: 4px 4px 0 0;
+        background: rgb(253,253,253);
+        background: -moz-linear-gradient(top,  rgba(253,253,253,1) 0%, rgba(234,234,234,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(253,253,253,1) 0%,rgba(234,234,234,1) 100%);
+        background: linear-gradient(to bottom,  rgba(253,253,253,1) 0%,rgba(234,234,234,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#eaeaea',GradientType=0 );
+    }
+
+    .account-table .table-cell {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 12px 0 12px 10px;
+    }
+
+    .account-table .table-cell-1 {
+        width: 6%;
+    }
+
+    .account-table .table-cell-2 {
+        width: 36%;
+    }
+
+    .account-table .table-cell-3 {
+        width: 29%;
+    }
+
+    .account-table .table-cell-4 {
+        width: 29%;
+    }
+
+    .account-table .table-cell h5 {
+        font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #171717;
+    }
+
+    .account-table .table-cell p {
+        font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #171717;
+    }
+
+    .account-table .table-cell a {
+        font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #0088cc;
+        text-decoration: underline;
+    }
+
+    .account-table .table-cell a:link,
+    .account-table .table-cell a:visited {
+        text-decoration: underline;
+    }
+
+    .account-table .table-cell a.active,
+    .account-table .table-cell a:active {
+        text-decoration: none;
+    }
+
+    .account-table .table-cell a:hover,
+    .account-table .table-cell a:active {
+        text-decoration: none;
+    }
+
+    .table-cell a.btn-cell {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 2px 0px;
+        padding: 2px 6px;
+        font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #ffffff;
+        text-decoration: none !important;
+        border: 1px solid transparent;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        border-radius: 6px;
+
+        background: rgb(220,107,126);
+        background: -moz-linear-gradient(top,  rgba(220,107,126,1) 0%, rgba(187,91,107,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(220,107,126,1) 0%,rgba(187,91,107,1) 100%);
+        background: linear-gradient(to bottom,  rgba(220,107,126,1) 0%,rgba(187,91,107,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc6b7e', endColorstr='#bb5b6b',GradientType=0 );
+    }
+
+    .table-cell a.btn-cell .icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: 15px;
+        height: 13px;
+        margin: -2px 3px 0 0;
+        background-image: url(img/table_sprite.png);
+        background-repeat: no-repeat;
+        background-position: 0 0; 
+    }
+
+    .table-cell a.btn-cell.checked-btn {
+        background: rgb(220,107,126);
+        background: -moz-linear-gradient(top,  rgba(220,107,126,1) 0%, rgba(187,91,107,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(220,107,126,1) 0%,rgba(187,91,107,1) 100%);
+        background: linear-gradient(to bottom,  rgba(220,107,126,1) 0%,rgba(187,91,107,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc6b7e', endColorstr='#bb5b6b',GradientType=0 );
+    }
+
+    .table-cell a.btn-cell.prom-btn {
+        background: rgb(138,192,140);
+        background: -moz-linear-gradient(top,  rgba(138,192,140,1) 0%, rgba(85,170,86,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(138,192,140,1) 0%,rgba(85,170,86,1) 100%);
+        background: linear-gradient(to bottom,  rgba(138,192,140,1) 0%,rgba(85,170,86,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ac08c', endColorstr='#55aa56',GradientType=0 );
+    }
+
+    .table-cell a.btn-cell.rating-btn {
+        background: rgb(255,172,90);
+        background: -moz-linear-gradient(top,  rgba(255,172,90,1) 0%, rgba(241,159,77,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(255,172,90,1) 0%,rgba(241,159,77,1) 100%);
+        background: linear-gradient(to bottom,  rgba(255,172,90,1) 0%,rgba(241,159,77,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffac5a', endColorstr='#f19f4d',GradientType=0 );
+    }
+
+    .table-cell a.btn-cell.edit-btn {
+        background: rgb(94,201,217);
+        background: -moz-linear-gradient(top,  rgba(94,201,217,1) 0%, rgba(90,193,208,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(94,201,217,1) 0%,rgba(90,193,208,1) 100%);
+        background: linear-gradient(to bottom,  rgba(94,201,217,1) 0%,rgba(90,193,208,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ec9d9', endColorstr='#5ac1d0',GradientType=0 );
+    }
+
+    .table-cell a.btn-cell.del-btn {
+        background: rgb(220,107,126);
+        background: -moz-linear-gradient(top,  rgba(220,107,126,1) 0%, rgba(187,91,107,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(220,107,126,1) 0%,rgba(187,91,107,1) 100%);
+        background: linear-gradient(to bottom,  rgba(220,107,126,1) 0%,rgba(187,91,107,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc6b7e', endColorstr='#bb5b6b',GradientType=0 );
+    }
+
+
+    .table-cell a.btn-cell .icon-checked {
+        background-position: 0 0;
+    }
+
+    .table-cell a.btn-cell .icon-prom {
+        background-position: -30px 0;
+    }
+
+    .table-cell a.btn-cell .icon-rating {
+        background-position: -65px 0;
+    }
+
+    .table-cell a.btn-cell .icon-edit {
+        background-position: -101px 0;
+    }
+
+    .table-cell a.btn-cell .icon-del {
+        background-position: -133px 0;
+    }
+
+
+/*--------------------------------------------------*/
+
+/* По желаию эти строчки стилей можете удалить
+    Это стили для того чтобы если вместо ссылок буду использоваться кнопки
+ */
+
+/*
+    .table-cell button.btn-cell {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 2px 0px;
+        padding: 2px 6px;
+        font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #ffffff;
+        cursor: pointer;
+        text-decoration: none !important;
+        border: 1px solid transparent;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        border-radius: 6px;
+
+        background: rgb(220,107,126);
+        background: -moz-linear-gradient(top,  rgba(220,107,126,1) 0%, rgba(187,91,107,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(220,107,126,1) 0%,rgba(187,91,107,1) 100%);
+        background: linear-gradient(to bottom,  rgba(220,107,126,1) 0%,rgba(187,91,107,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc6b7e', endColorstr='#bb5b6b',GradientType=0 );
+    }
+
+    .table-cell button.btn-cell .icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: 15px;
+        height: 13px;
+        margin: -2px 3px 0 0;
+        background-image: url(img/table_sprite.png);
+        background-repeat: no-repeat;
+        background-position: 0 0; 
+    }
+
+    .table-cell button.btn-cell.checked-btn {
+        background: rgb(220,107,126);
+        background: -moz-linear-gradient(top,  rgba(220,107,126,1) 0%, rgba(187,91,107,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(220,107,126,1) 0%,rgba(187,91,107,1) 100%);
+        background: linear-gradient(to bottom,  rgba(220,107,126,1) 0%,rgba(187,91,107,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc6b7e', endColorstr='#bb5b6b',GradientType=0 );
+    }
+
+    .table-cell button.btn-cell.prom-btn {
+        background: rgb(138,192,140);
+        background: -moz-linear-gradient(top,  rgba(138,192,140,1) 0%, rgba(85,170,86,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(138,192,140,1) 0%,rgba(85,170,86,1) 100%);
+        background: linear-gradient(to bottom,  rgba(138,192,140,1) 0%,rgba(85,170,86,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ac08c', endColorstr='#55aa56',GradientType=0 );
+    }
+
+    .table-cell button.btn-cell.rating-btn {
+        background: rgb(255,172,90);
+        background: -moz-linear-gradient(top,  rgba(255,172,90,1) 0%, rgba(241,159,77,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(255,172,90,1) 0%,rgba(241,159,77,1) 100%);
+        background: linear-gradient(to bottom,  rgba(255,172,90,1) 0%,rgba(241,159,77,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffac5a', endColorstr='#f19f4d',GradientType=0 );
+    }
+
+    .table-cell button.btn-cell.edit-btn {
+        background: rgb(94,201,217);
+        background: -moz-linear-gradient(top,  rgba(94,201,217,1) 0%, rgba(90,193,208,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(94,201,217,1) 0%,rgba(90,193,208,1) 100%);
+        background: linear-gradient(to bottom,  rgba(94,201,217,1) 0%,rgba(90,193,208,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ec9d9', endColorstr='#5ac1d0',GradientType=0 );
+    }
+
+    .table-cell button.btn-cell.del-btn {
+        background: rgb(220,107,126);
+        background: -moz-linear-gradient(top,  rgba(220,107,126,1) 0%, rgba(187,91,107,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(220,107,126,1) 0%,rgba(187,91,107,1) 100%);
+        background: linear-gradient(to bottom,  rgba(220,107,126,1) 0%,rgba(187,91,107,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc6b7e', endColorstr='#bb5b6b',GradientType=0 );
+    }
+
+
+    .table-cell button.btn-cell .icon-checked {
+        background-position: 0 0;
+    }
+
+    .table-cell button.btn-cell .icon-prom {
+        background-position: -30px 0;
+    }
+
+    .table-cell button.btn-cell .icon-rating {
+        background-position: -65px 0;
+    }
+
+    .table-cell button.btn-cell .icon-edit {
+        background-position: -101px 0;
+    }
+
+    .table-cell button.btn-cell .icon-del {
+        background-position: -133px 0;
+    }
+
+*/
+
+/*--------------------------------------------------*/
+
+    .account-blue-link {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 15px 0;
+        padding: 3px 10px;
+        cursor: pointer;
+        font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #ffffff;
+        text-decoration: none;
+        background: rgba(93, 200, 216, 1);
+        border: 1px solid transparent;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .account-blue-link .fa {
+        font-size: 16px;
+        line-height: 16px;
+        position: relative;
+        top: 2px;
+        padding: 0 5px 0 0;
+    }
+
+
+    
+
+
+
+
+
+
+    /*--- .Мои объявления  ---*/
 
 
     
