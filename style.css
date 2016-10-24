@@ -3966,6 +3966,31 @@ p.quote:before {
         padding: 0 5px 0 0;
     }
 
+    .my_questions.account-table .account-table-header .table-cell {
+        padding: 5px 10px;
+    }
+
+    .my_questions.account-table .account-table-row:nth-child(2n + 1) {
+        background: rgba(250, 250, 250, 1);
+    }
+
+    .my_questions.account-table .table-cell {
+        padding: 15px 10px;
+    }
+
+    .my_questions.account-table .table-cell-1 {
+        width: 18%;
+    }
+
+    .my_questions.account-table .table-cell-2 {
+        width: 66%;
+    }
+
+    .my_questions.account-table .table-cell-3 {
+        width: 16%;
+    }
+
+
 
     
 
