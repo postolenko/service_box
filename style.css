@@ -3630,7 +3630,7 @@ p.quote:before {
     .account-table {
         /*display: table;*/
         display: block;
-        border-collapse: collapse;
+        /*border-collapse: collapse;*/
         width: 100%;
         margin: 12px 0 14px 0;
     }
@@ -3640,14 +3640,16 @@ p.quote:before {
         display: inline-block;
         vertical-align: middle;
         width: 100%;
-        /*padding: 15px 10px;*/
-        padding: 0 10px;
+        padding: 15px 10px;
+        font-size: 0;
+        line-height: 0;
+        /*padding: 0 10px;*/
         border-right: 1px solid #dcdcdc;
         border-bottom: 1px solid #dcdcdc;
         border-left: 1px solid #dcdcdc;
     }
 
-    .account-table.empty-table .account-table-row {
+/*    .account-table.empty-table .account-table-row {
         display: block !important;
         width: 100%;
         padding: 10px 10px;
@@ -3661,12 +3663,12 @@ p.quote:before {
         line-height: 0;
         text-align: left;
         padding: 0;
-    }
+    }*/
 
     .account-table .account-table-header .table-cell {
         display: inline-block;
         vertical-align: middle;
-        padding: 5px 10px;
+        /*padding: 5px 10px;*/
     }
 
     .account-table .table-cell.center-txt {
@@ -3677,7 +3679,9 @@ p.quote:before {
         /*display: table-row;*/
         display: block;
         width: 100%;
-        padding: 0 16px;
+        padding: 15px 10px;
+        font-size: 0;
+        line-height: 0;
         border: 1px solid #dcdcdc;
         -webkit-border-radius: 4px 4px 0 0;
         -moz-border-radius: 4px 4px 0 0;
@@ -3695,7 +3699,8 @@ p.quote:before {
         /*display: table-cell;*/
         display: inline-block;
         vertical-align: middle;
-        padding: 12px 0 12px 10px;
+        /*padding: 12px 0 12px 10px;*/
+        /*padding: 12px 0;*/
     }
 
     .account-table .table-cell-1 {
@@ -3715,6 +3720,7 @@ p.quote:before {
     }
 
     .account-table .table-cell h5 {
+        padding: 0;
         font-family: "Myriad Pro", Arial, Verdana, sans-serif;
         font-size: 16px;
         line-height: 18px;
@@ -3965,7 +3971,7 @@ p.quote:before {
         display: inline-block;
         vertical-align: middle;
         margin: 15px 0;
-        padding: 3px 10px;
+        padding: 2px 12px;
         cursor: pointer;
         font-family: "Myriad Pro", Arial, Verdana, sans-serif;
         font-size: 14px;
@@ -3990,21 +3996,21 @@ p.quote:before {
         padding: 0 5px 0 0;
     }
 
-    .my_questions.account-table .account-table-header {
+    /*.my_questions.account-table .account-table-header {
         display: table;
         width: 100%;
     }
 
     .my_questions.account-table .account-table-header .table-cell {
         padding: 5px 10px;
-    }
+    }*/
 
     .my_questions.account-table .account-table-row:nth-child(2n + 1) {
         background: rgba(250, 250, 250, 1);
     }
 
     .my_questions.account-table .table-cell {
-        padding: 15px 10px;
+        /*padding: 15px 10px;*/
     }
 
     .my_questions.account-table .table-cell-1 {
@@ -4028,10 +4034,11 @@ p.quote:before {
         vertical-align: middle;
     }
 
-    /*.questions-table .account-table-header {
-        display: block;
-        width: 100%;
-    }*/
+    .questions-table .account-table-header {
+        /*display: block;
+        width: 100%;*/
+        padding: 10px;
+    }
 
     .questions-table .account-table-header .table-cell-1 {
         width: 71%;
@@ -4052,15 +4059,15 @@ p.quote:before {
     }
 
     .questions .account-table-header h3 {
-        padding: 2px 0;
+        padding: 0;
     }
 
     .questions-table .account-table-row p {
-        padding: 15px 10px;
+        /*padding: 15px 10px;*/
     }
 
     .account-table-row.ansver p {
-        padding: 15px 0 15px 3%;
+        padding: 0 0 0 3%;
         font-family: "Myriad Pro", Arial, Verdana, sans-serif;
         font-size: 16px;
         line-height: 18px;
@@ -4134,6 +4141,25 @@ p.quote:before {
         background: -webkit-linear-gradient(top,  rgba(84,182,196,1) 0%,rgba(63,135,145,1) 100%);
         background: linear-gradient(to bottom,  rgba(84,182,196,1) 0%,rgba(63,135,145,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54b6c4', endColorstr='#3f8791',GradientType=0 );
+    }
+
+    .icon.icon-unlock {
+        display: inline-block;
+        vertical-align: middle;
+        width: 15px;
+        height: 15px;
+        background-image: url(img/unlock_icon.png);
+        background-repeat: no-repeat;
+        background-position: 0 1px;
+        margin: -11px 1px 0 0;
+    }
+
+    .messages_table.account-table .table-cell-1 {
+        width: 75%;
+    }
+
+    .messages_table.account-table .table-cell-2 {
+        width: 25%;
     }
 
 
