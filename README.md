@@ -12,3 +12,4 @@
 # http://postolenko.github.io/service_box/moi_obyvleniya_servisnih_centrov_ne_naideno.html
 # http://postolenko.github.io/service_box/privatnie_soobsheniya.html
 # http://postolenko.github.io/service_box/messages.html
+# http://postolenko.github.io/service_box/zayavki_dobavit_zayavky.html
