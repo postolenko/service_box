@@ -122,4 +122,44 @@ $(function() {
     });
 
 
+// ---------------------------------------------------------
+
+    $(function() {
+
+        var indexAccordeonLink;
+
+        var tipHeight;
+
+        $(".accordeon li a + .tip-box-wrapp").addClass("hover");
+
+        $(".accordeon li a").click(function(accordeonEvent) {
+
+            accordeonEvent.preventDefault();
+
+            indexAccordeonLink = $(".accordeon li a").index(this);
+
+            tipHeight = $(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp .tip-box").height();
+
+            // $(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp").toggleClass("show");
+
+            if($(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp").height() > 0) {                
+
+                $(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp").animate({"height" : 0 + "px"}, 300);
+
+                // $(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp").removeClass("show");
+
+            } else {
+
+                $(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp").animate({"height" : tipHeight + "px"}, 300);
+
+                // $(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp").addClass("show");
+
+            }
+
+
+        });
+
+    });
+
+
 });
