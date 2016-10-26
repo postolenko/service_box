@@ -138,21 +138,19 @@ $(function() {
 
             indexAccordeonLink = $(".accordeon li a").index(this);
 
-            tipHeight = $(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp .tip-box").height();
-
-            // $(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp").toggleClass("show");
+            tipHeight = $(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp .tip-box").outerHeight(true);
 
             if($(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp").height() > 0) {                
 
                 $(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp").animate({"height" : 0 + "px"}, 300);
 
-                // $(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp").removeClass("show");
+                $(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp").removeClass("show");
 
             } else {
 
                 $(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp").animate({"height" : tipHeight + "px"}, 300);
 
-                // $(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp").addClass("show");
+                $(".accordeon li a:eq("+ indexAccordeonLink +") + .tip-box-wrapp").addClass("show");
 
             }
 

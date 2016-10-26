@@ -4277,7 +4277,6 @@ p.quote:before {
         height: auto;
         overflow: hidden;
         margin: -4px 0 0 0;
-        padding: 10px 15px 6px 15px;
         border-right: 1px solid #dcdcdc;
         border-bottom: 1px solid #dcdcdc;
         border-left: 1px solid #dcdcdc;
@@ -4291,16 +4290,17 @@ p.quote:before {
         height: 0;
         border: 1px solid transparent;
         margin: 0;
-        padding: 0;
     }
 
     .tip-box-wrapp.hover.show {
-        height: none;
         border-right: 1px solid #dcdcdc;
         border-bottom: 1px solid #dcdcdc;
         border-left: 1px solid #dcdcdc;
         margin: 0;
-        padding: 10px 15px 6px 15px;
+    }
+
+    .tip-box {
+        padding: 10px 7% 6px 7%;
     }
 
     .tip-box p {
