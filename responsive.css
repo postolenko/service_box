@@ -285,6 +285,14 @@
 
 @media only screen and (max-width: 480px) {
 
+	img.left,
+	img.right {
+		display: block;
+		width: 100%;
+		float: none;
+		margin: 6px auto;
+	}
+
 	.five-cols .thumbnail-box {
 		width: 50%;
 		padding: 10px 2.5%;
