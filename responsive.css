@@ -4,6 +4,7 @@
 		padding: 0 2%;
 	}
 
+
 	.main-nav-block.left-col {
 		position: fixed;
 		/*width: 150%;*/
@@ -86,6 +87,63 @@
 		width: 50%;
 		margin: 1% 0;
 	}
+
+
+
+	.sidebar.left {
+		display: block;
+		min-width: 300px;
+		float: none;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: -110%;
+		overflow: hidden;
+		-webkit-box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, .2);
+		-moz-box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, .2);
+		box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, .2);
+		    
+	    -webkit-transition-property: left;
+	    -webkit-transition-duration: .7s;
+	    -webkit-transition-timing-function: ease;
+
+	    -moz-transition-property: left;
+	    -moz-transition-duration: .7s;
+	    -moz-transition-timing-function: ease;
+
+	    -ms-transition-property: left;
+	    -ms-transition-duration: .7s;
+	    -ms-transition-timing-function: ease;
+
+	    -o-transition-property: left;
+	    -o-transition-duration: .7s;
+	    -o-transition-timing-function: ease;
+
+	    transition-property: left;
+	    transition-duration: .7s;
+	    transition-timing-function: ease;
+	}
+
+	.sidebar.left.show {
+		left: 0;
+	}
+
+	.aside-wrapp {
+        width: 150%;
+        padding: 0 40% 0 2%;
+        height: 100vh;
+    }
+
+	.with-sidebar-section .main-content {
+		display: block;
+		width: 100%;
+		float: none;
+		padding: 0 2%;
+	}
+
+
+
+
 
 	.five-cols .thumbnail-box {
 	    width: 33.33%;

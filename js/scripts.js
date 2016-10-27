@@ -186,6 +186,17 @@ $(function() {
      });
 
 
+    $(function() {
+
+         $(".show-sidebar-btn").click(function() {
+
+             $(".sidebar.left, .show-sidebar-btn").toggleClass("show");
+
+        });
+
+    });
+
+
 
 // ---------------------------------------------------------
 

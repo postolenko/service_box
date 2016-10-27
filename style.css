@@ -1619,10 +1619,69 @@ p.quote:before {
 
          /*---  Service  ---*/
 
+        .show-sidebar-btn {
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: fixed;
+            top: 50px;
+            left: 2%;
+            z-index: 6;
+            border: 1px solid transparent;
+            background: rgba(90, 124, 209, 1);
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            cursor: pointer;
+            opacity: .6;
+
+            -webkit-transition-property: transform;
+            -webkit-transition-duration: .3s;
+            -webkit-transition-timing-function: ease;
+
+            -moz-transition-property: transform;
+            -moz-transition-duration: .3s;
+            -moz-transition-timing-function: ease;
+
+            -ms-transition-property: transform;
+            -ms-transition-duration: .3s;
+            -ms-transition-timing-function: ease;
+
+            -o-transition-property: transform;
+            -o-transition-duration: .3s;
+            -o-transition-timing-function: ease;
+
+            transition-property: transform;
+            transition-duration: .3s;
+            transition-timing-function: ease;
+        }
+
+        .show-sidebar-btn .fa {
+            font-size: 18px;
+            line-height: 24px;
+            color: #ffffff;
+        }
+
+        .show-sidebar-btn.show {
+            -webkit-transform: rotate(-180deg);
+            -moz-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            -o-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+        }
+
         .sidebar {
             display: block;
             width: 27%;
             float: left;
+            z-index: 5;
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .aside-wrapp {
+            width: 100%;
         }
 
         .sidebar.width-18 {
@@ -2920,12 +2979,13 @@ p.quote:before {
 
         .send-error-message button[type=button] {
             display: block;
-            min-width: 188px;
+            /*min-width: 188px;*/
+            width: 100%;
             height: auto;
-            padding: 0 5px;
+            padding: 7px 5px;
             font-family: "Myriad Pro", Arial, Verdana, sans-serif;
             font-size: 16px;
-            line-height: 32px;
+            line-height: 19px;
             font-weight: 400;
             color: #ffffff;
             border: 1px solid transparent;

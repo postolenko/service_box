@@ -22,8 +22,11 @@
 
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 
+	<link rel="stylesheet" href="vendors/css/jquery.mCustomScrollbar.css" />
 
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
+
+	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 
 	<script type="text/javascript" src="slick/slick.js"></script>
 
@@ -52,7 +55,7 @@
 
 	<!-- Header -->
 
-	<header>
+		<header>
 
 		<div class="header">
 			
@@ -61,6 +64,8 @@
 				<div class="row offset-ziro">
 
 					<div class="main-nav-block left-col">
+
+						<button type="button" class="close-resp-nav-btn">&#215;</button>
 						
 						<nav>
 							
@@ -78,7 +83,9 @@
 
 					</div>
 
-					<div class="right-col">
+					<div class="right-col clearfix">
+
+						<button type="button" class="resp-nav-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
 						
 						<div class="search-box">
 
@@ -88,17 +95,28 @@
 
 						<div class="favorite-box">
 
-							<i class="fa fa-heart" aria-hidden="true"></i>
-							<a class="header-link favorite-link" href="#">Добавить</a>
+							<a href="#" class="favorite-link"><i class="fa fa-heart" aria-hidden="true"></i>Добавить</a>
 
 						</div>
 
+						
 						<div class="enter-box">
 
-							<i class="fa fa-user" aria-hidden="true"></i>
-							<a class="header-link enter-link" href="#">Войти</a>
+							<a href="#" class="enter-link"><i class="fa fa-user" aria-hidden="true"></i>Войти</a>
 
 						</div>
+
+						<!-- <div class="enter-box entered">
+
+							<div class="avatar-box">
+								
+								<img src="img/user_photo.jpg" alt="">
+
+							</div>
+
+							<a href="#" class="show-account-menu"><i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+
+						</div> -->
 
 					</div>
 
@@ -146,296 +164,301 @@
 					
 					<div class="with-sidebar-section row clearfix">
 						
+						<button class="show-sidebar-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
 
-						<div class="sidebar left">
+						<div class="sidebar left with-scroll">
 
-							<aside>
+							<div class="aside-wrapp with-scroll">
 
-								<h2 class="sidebar-h">Параметры поиска</h2>
-								
-								<div class="sidebar-search-block">
+								<aside>
 
-									<form>
+									<h2 class="sidebar-h">Параметры поиска</h2>
+									
+									<div class="sidebar-search-block">
 
-										<section>
-											
-											<h3>Город</h3>
+										<form>
 
-											<select>
+											<section>
 												
-												<option>Москва</option>
-												<option>Город 2</option>
-												<option>Город 3</option>
-												<option>Город 4</option>
-												<option>Город 5</option>
+												<h3>Город</h3>
 
-											</select>
-
-										</section>
-
-										<section>
-											
-											<h3>Другие города</h3>
-
-											<div class="radio-box">
-
-												<input id="radio_1" type="radio" name="radio" value="radio_1" checked>
-												<label for="radio_1">находятся в Москве <span>(212)</span></label>
-
-											</div>
-
-											<div class="radio-box">
-
-												<input id="radio_2" type="radio" name="radio" value="radio_2">
-												<label for="radio_2">осуществляют выезд в Москву <span>(7)</span></label>
-
-											</div>
-
-										</section>
-
-										<section>
-
-											<div class="sidebar-h3">
-											
-												<h3>Производитель</h3><a href="#" class="main-link">Все производители</a>
-
-											</div>
-
-											<select>
-												
-												<option>Выберите</option>
-												<option>Выбор 2</option>
-												<option>Выбор 3</option>
-												<option>Выбор 4</option>
-												<option>Выбор 5</option>
-
-											</select>
-
-										</section>
-
-										<section>
-
-											<div class="choose-box">
-											
-												<ul class="choose-list">
+												<select>
 													
-													<li><a class="choose-link" href="#">Ремонт стиральных машин Samsung в Москве</a></li>
-													<li><a class="choose-link" href="#">Ремонт стиральных машин Daewoo в Москве</a></li>
-													<li><a class="choose-link" href="#">Ремонт стиральных машин LG в Москве</a></li>
-													<li><a class="choose-link" href="#">Ремонт стиральных машин Siemens в Москве</a></li>
-													<li><a class="choose-link" href="#">Ремонт стиральных машин Siemens в Москве</a></li>
+													<option>Москва</option>
+													<option>Город 2</option>
+													<option>Город 3</option>
+													<option>Город 4</option>
+													<option>Город 5</option>
 
-												</ul>
+												</select>
 
-												<button class="show-more">показать еще</button>
+											</section>
 
-											</div>
+											<section>
+												
+												<h3>Другие города</h3>
 
-										</section>
+												<div class="radio-box">
+
+													<input id="radio_1" type="radio" name="radio" value="radio_1" checked>
+													<label for="radio_1">находятся в Москве <span>(212)</span></label>
+
+												</div>
+
+												<div class="radio-box">
+
+													<input id="radio_2" type="radio" name="radio" value="radio_2">
+													<label for="radio_2">осуществляют выезд в Москву <span>(7)</span></label>
+
+												</div>
+
+											</section>
+
+											<section>
+
+												<div class="sidebar-h3">
+												
+													<h3>Производитель</h3><a href="#" class="main-link">Все производители</a>
+
+												</div>
+
+												<select>
+													
+													<option>Выберите</option>
+													<option>Выбор 2</option>
+													<option>Выбор 3</option>
+													<option>Выбор 4</option>
+													<option>Выбор 5</option>
+
+												</select>
+
+											</section>
+
+											<section>
+
+												<div class="choose-box">
+												
+													<ul class="choose-list">
+														
+														<li><a class="choose-link" href="#">Ремонт стиральных машин Samsung в Москве</a></li>
+														<li><a class="choose-link" href="#">Ремонт стиральных машин Daewoo в Москве</a></li>
+														<li><a class="choose-link" href="#">Ремонт стиральных машин LG в Москве</a></li>
+														<li><a class="choose-link" href="#">Ремонт стиральных машин Siemens в Москве</a></li>
+														<li><a class="choose-link" href="#">Ремонт стиральных машин Siemens в Москве</a></li>
+
+													</ul>
+
+													<button class="show-more">показать еще</button>
+
+												</div>
+
+											</section>
+
+											<section>
+
+												<div class="sidebar-h3">
+												
+													<h3>Категория</h3><a href="#" class="main-link">Все категории</a>
+
+												</div>
+
+												<select>
+													
+													<option>Стиральные машины</option>
+													<option>Категория 2</option>
+													<option>Категория 3</option>
+													<option>Категория 4</option>
+													<option>Категория 5</option>
+
+												</select>
+
+											</section>
+
+											<section>
+												
+												<h3>Тип</h3>
+
+												<div class="choose-type-box">
+
+													<div class="radio-box choose-type">
+
+														<input id="radio_3" type="radio" name="radio1" value="radio_3" checked>
+														<label for="radio_3">все</label>
+
+													</div>
+
+													<div class="radio-box choose-type">
+
+														<input id="radio_4" type="radio" name="radio1" value="radio_4">
+														<label for="radio_4">только частные мастеры</label>
+
+													</div>
+
+												</div>
+
+											</section>
+
+											<section class="sidebar-contact-sect">
+												
+												<h3>Ближайшие станции метро</h3>
+
+												<div class="image-box">
+													
+													<img src="img/metro_photo.jpg" alt="Ближайшие станции метро">
+
+												</div>
+
+												<a class="sidebar-sect-link" href="#" >Выбрать</a>
+
+											</section>
+
+										</form>
+
+									</div>
+
+									<div class="sidebar-box">
 
 										<section>
-
-											<div class="sidebar-h3">
 											
-												<h3>Категория</h3><a href="#" class="main-link">Все категории</a>
+											<h2>Последние вопросы</h2>
+
+											<div class="sidebar-article offset-ziro">
+												
+												<div class="col col-1">
+													
+													<div class="img-box">
+
+														<img src="img/automatic_mashine.jpg" alt="Стиральная машина">
+
+													</div>
+
+												</div>
+
+												<div class="col col-2">
+													
+													<p>01.09.2016</p>
+
+													<a href="#">при работе стиральная машина кратковременно отключается</a>
+
+												</div>
 
 											</div>
 
-											<select>
+											<div class="sidebar-article offset-ziro">
 												
-												<option>Стиральные машины</option>
-												<option>Категория 2</option>
-												<option>Категория 3</option>
-												<option>Категория 4</option>
-												<option>Категория 5</option>
+												<div class="col col-1">
+													
+													<div class="img-box">
 
-											</select>
+														<img src="img/automatic_mashine.jpg" alt="Стиральная машина">
+
+													</div>
+
+												</div>
+
+												<div class="col col-2">
+													
+													<p>01.09.2016</p>
+
+													<a href="#">при работе стиральная машина кратковременно отключается</a>
+
+												</div>
+
+											</div>
+
+											<div class="sidebar-article offset-ziro">
+												
+												<div class="col col-1">
+													
+													<div class="img-box">
+
+														<img src="img/automatic_mashine.jpg" alt="Стиральная машина">
+
+													</div>
+
+												</div>
+
+												<div class="col col-2">
+													
+													<p>01.09.2016</p>
+
+													<a href="#">при работе стиральная машина кратковременно отключается</a>
+
+												</div>
+
+											</div>
+
+											<div class="sidebar-article offset-ziro">
+												
+												<div class="col col-1">
+													
+													<div class="img-box">
+
+														<img src="img/automatic_mashine.jpg" alt="Стиральная машина">
+
+													</div>
+
+												</div>
+
+												<div class="col col-2">
+													
+													<p>01.09.2016</p>
+
+													<a href="#">при работе стиральная машина кратковременно отключается</a>
+
+												</div>
+
+											</div>
 
 										</section>
+
+									</div>
+
+									<div class="sidebar-box">
 
 										<section>
 											
-											<h3>Тип</h3>
+											<h2>Новости о стиральной машине</h2>
 
-											<div class="choose-type-box">
+											<div class="article-news">
+												
+												<a class="sidebar-sect-link" href="#">Компания LG продемонстрировала стиральную машину с двумя загрузочными отсеками - Twin Wash System.</a>
 
-												<div class="radio-box choose-type">
+												<p>Компания LG продемонстрировала умную стиральную машину с двумя загрузочными отсеками - Twin Wash System, у которой основной находится там где положено, а вот второй небольшой и выдвижной, расположен в...</p>
 
-													<input id="radio_3" type="radio" name="radio1" value="radio_3" checked>
-													<label for="radio_3">все</label>
+											</div>
 
-												</div>
+											<div class="article-news">
+												
+												<a class="sidebar-sect-link" href="#">Компания LG продемонстрировала стиральную машину с двумя загрузочными отсеками - Twin Wash System.</a>
 
-												<div class="radio-box choose-type">
+												<p>Компания LG продемонстрировала умную стиральную машину с двумя загрузочными отсеками - Twin Wash System, у которой основной находится там где положено, а вот второй небольшой и выдвижной, расположен в...</p>
 
-													<input id="radio_4" type="radio" name="radio1" value="radio_4">
-													<label for="radio_4">только частные мастеры</label>
+											</div>
 
-												</div>
+											<div class="article-news">
+												
+												<a class="sidebar-sect-link" href="#">Компания LG продемонстрировала стиральную машину с двумя загрузочными отсеками - Twin Wash System.</a>
+
+												<p>Компания LG продемонстрировала умную стиральную машину с двумя загрузочными отсеками - Twin Wash System, у которой основной находится там где положено, а вот второй небольшой и выдвижной, расположен в...</p>
+
+											</div>
+
+											<div class="article-news">
+												
+												<a class="sidebar-sect-link" href="#">Компания LG продемонстрировала стиральную машину с двумя загрузочными отсеками - Twin Wash System.</a>
+
+												<p>Компания LG продемонстрировала умную стиральную машину с двумя загрузочными отсеками - Twin Wash System, у которой основной находится там где положено, а вот второй небольшой и выдвижной, расположен в...</p>
 
 											</div>
 
 										</section>
 
-										<section class="sidebar-contact-sect">
-											
-											<h3>Ближайшие станции метро</h3>
+									</div>								
 
-											<div class="image-box">
-												
-												<img src="img/metro_photo.jpg" alt="Ближайшие станции метро">
+								</aside>
 
-											</div>
-
-											<a class="sidebar-sect-link" href="#" >Выбрать</a>
-
-										</section>
-
-									</form>
-
-								</div>
-
-								<div class="sidebar-box">
-
-									<section>
-										
-										<h2>Последние вопросы</h2>
-
-										<div class="sidebar-article offset-ziro">
-											
-											<div class="col col-1">
-												
-												<div class="img-box">
-
-													<img src="img/automatic_mashine.jpg" alt="Стиральная машина">
-
-												</div>
-
-											</div>
-
-											<div class="col col-2">
-												
-												<p>01.09.2016</p>
-
-												<a href="#">при работе стиральная машина кратковременно отключается</a>
-
-											</div>
-
-										</div>
-
-										<div class="sidebar-article offset-ziro">
-											
-											<div class="col col-1">
-												
-												<div class="img-box">
-
-													<img src="img/automatic_mashine.jpg" alt="Стиральная машина">
-
-												</div>
-
-											</div>
-
-											<div class="col col-2">
-												
-												<p>01.09.2016</p>
-
-												<a href="#">при работе стиральная машина кратковременно отключается</a>
-
-											</div>
-
-										</div>
-
-										<div class="sidebar-article offset-ziro">
-											
-											<div class="col col-1">
-												
-												<div class="img-box">
-
-													<img src="img/automatic_mashine.jpg" alt="Стиральная машина">
-
-												</div>
-
-											</div>
-
-											<div class="col col-2">
-												
-												<p>01.09.2016</p>
-
-												<a href="#">при работе стиральная машина кратковременно отключается</a>
-
-											</div>
-
-										</div>
-
-										<div class="sidebar-article offset-ziro">
-											
-											<div class="col col-1">
-												
-												<div class="img-box">
-
-													<img src="img/automatic_mashine.jpg" alt="Стиральная машина">
-
-												</div>
-
-											</div>
-
-											<div class="col col-2">
-												
-												<p>01.09.2016</p>
-
-												<a href="#">при работе стиральная машина кратковременно отключается</a>
-
-											</div>
-
-										</div>
-
-									</section>
-
-								</div>
-
-								<div class="sidebar-box">
-
-									<section>
-										
-										<h2>Новости о стиральной машине</h2>
-
-										<div class="article-news">
-											
-											<a class="sidebar-sect-link" href="#">Компания LG продемонстрировала стиральную машину с двумя загрузочными отсеками - Twin Wash System.</a>
-
-											<p>Компания LG продемонстрировала умную стиральную машину с двумя загрузочными отсеками - Twin Wash System, у которой основной находится там где положено, а вот второй небольшой и выдвижной, расположен в...</p>
-
-										</div>
-
-										<div class="article-news">
-											
-											<a class="sidebar-sect-link" href="#">Компания LG продемонстрировала стиральную машину с двумя загрузочными отсеками - Twin Wash System.</a>
-
-											<p>Компания LG продемонстрировала умную стиральную машину с двумя загрузочными отсеками - Twin Wash System, у которой основной находится там где положено, а вот второй небольшой и выдвижной, расположен в...</p>
-
-										</div>
-
-										<div class="article-news">
-											
-											<a class="sidebar-sect-link" href="#">Компания LG продемонстрировала стиральную машину с двумя загрузочными отсеками - Twin Wash System.</a>
-
-											<p>Компания LG продемонстрировала умную стиральную машину с двумя загрузочными отсеками - Twin Wash System, у которой основной находится там где положено, а вот второй небольшой и выдвижной, расположен в...</p>
-
-										</div>
-
-										<div class="article-news">
-											
-											<a class="sidebar-sect-link" href="#">Компания LG продемонстрировала стиральную машину с двумя загрузочными отсеками - Twin Wash System.</a>
-
-											<p>Компания LG продемонстрировала умную стиральную машину с двумя загрузочными отсеками - Twin Wash System, у которой основной находится там где положено, а вот второй небольшой и выдвижной, расположен в...</p>
-
-										</div>
-
-									</section>
-
-								</div>								
-
-							</aside>
+							</div>
 
 						</div>
 
@@ -620,8 +643,6 @@
 											</div>
 
 										</div>
-
-
 
 										<div class="col col-2">
 											
@@ -1444,6 +1465,20 @@
 			 //    }
 			 //  ]
 			});
+
+		(function($){
+
+			$(window).on("load",function(){
+
+				$(".main-nav-list").mCustomScrollbar();
+
+			    $(".aside-wrapp.with-scroll").mCustomScrollbar();
+
+			});
+
+		})(jQuery);
+
+		
 
 		</script>
 	
