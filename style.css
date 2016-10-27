@@ -3499,7 +3499,7 @@ p.quote:before {
             width: 57%;
         }
 
-        .profile  .inputs label {
+        .profile .user-form-box .inputs label {
             display: inline-block;
             vertical-align: middle;
             width: 40%;
@@ -3512,7 +3512,7 @@ p.quote:before {
             padding: 0 2% 0 0;
         }
 
-        .profile  .inputs input {
+        .profile .user-form-box .inputs input {
             display: inline-block;
             vertical-align: middle;
             width: 60%;
