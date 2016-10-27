@@ -135,6 +135,10 @@
         height: 100vh;
     }
 
+	.show-sidebar-btn {
+		display: block;
+	}
+
 	.with-sidebar-section .main-content {
 		display: block;
 		width: 100%;
