@@ -116,9 +116,14 @@ img {
 
 select {
     -webkit-appearance: none;
-    appearance: none;
+    -ms-appearance: none;
+    appearance: none!important;
     text-indent: 0.01px;
     text-overflow: "";
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 &::-ms-expand { display: none; }
@@ -626,6 +631,23 @@ p.quote:before {
 
 .top-header-row .left-col {
     width: 73%;
+    background: rgba(92, 198, 213, 1);
+    z-index: 7;
+    /*background: rgba(91, 194, 209, 1);*/
+}
+
+.close-resp-nav-btn {
+    display: none;
+    width: 40px;
+    height: 36px;
+    margin: 2% 0 2% 3%;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 35px;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid #ffffff;
+    background: transparent;
 }
 
 .top-header-row .right-col {
@@ -633,9 +655,28 @@ p.quote:before {
     text-align: right;
 }
 
+.resp-nav-btn {
+    display: none;
+    float: left;
+    width: 38px;
+    height: 30px;
+    margin: 6px 0 0 0;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.resp-nav-btn .fa-bars {
+    font-size: 26px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
 .main-nav-block {
     display: inline-block;
     vertical-align: middle;
+    /*background: rgba(91, 194, 209, 1);*/
+    z-index: 2;
 }
 
 .main-nav-list {
@@ -650,6 +691,7 @@ p.quote:before {
 .main-nav-list li a {
     display: inline-block;
     vertical-align: middle;
+    text-align: center;
     font-family: "Myriad Pro", Arial, Verdana, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -836,6 +878,45 @@ p.quote:before {
     background: -webkit-linear-gradient(top,  rgba(85,183,197,1) 0%,rgba(63,135,146,1) 100%);
     background: linear-gradient(to bottom,  rgba(85,183,197,1) 0%,rgba(63,135,146,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55b7c5', endColorstr='#3f8792',GradientType=0 );
+}
+
+.avatar-box {
+    display: inline-block;
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 1);
+    width: 32px;
+    height: 32px;
+    margin: 7px 12px 0 0;
+    overflow: hidden;
+}
+
+.avatar-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 0px solid transparent;
+}
+
+.enter-box.entered {
+    margin: 0 0 0 16px;
+}
+
+.enter-box a.show-account-menu {
+    display: inline-block;
+    vertical-align: middle;
+    height: 10px;
+    width: 14px;
+    overflow: hidden;
+    margin: 4px 0 0 0;
+}
+
+.enter-box a.show-account-menu .fa-sort-desc {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    margin: -12px 0 0 0;
 }
 
 
@@ -1256,7 +1337,7 @@ p.quote:before {
             width: 100%;
             height: auto;
             background: rgba(26, 42, 78, 1);
-            transform: scale(1.05);
+/*            transform: scale(1.05);
                 
             -webkit-transition-property: transform;
             -webkit-transition-duration: .3s;
@@ -1276,12 +1357,12 @@ p.quote:before {
 
             transition-property: transform;
             transition-duration: .3s;
-            transition-timing-function: ease;
+            transition-timing-function: ease;*/
         }
 
-        .slider-questions div img:hover {
+/*        .slider-questions div img:hover {
             transform: scale(1);
-        }
+        }*/
 
         .slider-questions div.mask {
             display: inline-block;
@@ -1616,7 +1697,7 @@ p.quote:before {
         .sidebar select {
             font-family: "Myriad Pro", Arial, Verdana, sans-serif;
             font-size: 14px;
-            /*line-height: 20px;*/
+            line-height: 25px;
             font-weight: 400;
             color: #7b7b7b;
             background-color: #ffffff;
@@ -1842,16 +1923,12 @@ p.quote:before {
         .choose-type-box {
             display: table;
             width: 100%;
+            border-collapse: collapse;
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             -ms-border-radius: 4px;
             -o-border-radius: 4px;
             border-radius: 4px;
-/*            background: rgb(112,151,229);
-            background: -moz-linear-gradient(top,  rgba(112,151,229,1) 0%, rgba(91,123,187,1) 100%);
-            background: -webkit-linear-gradient(top,  rgba(112,151,229,1) 0%,rgba(91,123,187,1) 100%);
-            background: linear-gradient(to bottom,  rgba(112,151,229,1) 0%,rgba(91,123,187,1) 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7097e5', endColorstr='#5b7bbb',GradientType=0 );*/
             background: rgb(94,201,217);
             background: -moz-linear-gradient(top,  rgba(94,201,217,1) 0%, rgba(90,193,208,1) 100%);
             background: -webkit-linear-gradient(top,  rgba(94,201,217,1) 0%,rgba(90,193,208,1) 100%);
@@ -1885,24 +1962,19 @@ p.quote:before {
             display: inline-block;
             vertical-align: middle;
             width: 100%;
-            /*height: 100%;*/
+            height: 100%;
             text-align: center;
             cursor: pointer;
             font-family: "Myriad Pro", Arial, Verdana, sans-serif;
             font-size: 14px;
-            line-height: 18px;
+            line-height: 28px;
             font-weight: normal;
             color: #ffffff;
             position: relative;
-            padding: 5px 15px;
+            padding: 0 15px;
         }
 
         .radio-box.choose-type input[type=radio]:checked + label {
-            /*background: rgb(100,135,206);
-            background: -moz-linear-gradient(top,  rgba(100,135,206,1) 0%, rgba(69,93,142,1) 100%);
-            background: -webkit-linear-gradient(top,  rgba(100,135,206,1) 0%,rgba(69,93,142,1) 100%);
-            background: linear-gradient(to bottom,  rgba(100,135,206,1) 0%,rgba(69,93,142,1) 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6487ce', endColorstr='#455d8e',GradientType=0 );*/
             background: rgb(84,182,196);
             background: -moz-linear-gradient(top,  rgba(84,182,196,1) 0%, rgba(63,135,145,1) 100%);
             background: -webkit-linear-gradient(top,  rgba(84,182,196,1) 0%,rgba(63,135,145,1) 100%);
@@ -2630,8 +2702,10 @@ p.quote:before {
         }
 
         .pagination ul {
-            display: block;
-            margin: 10px 0;
+            display: inline-block;
+            vertical-align: middle;
+            /*width: 52%;*/
+            margin: 5px 0;
         }
 
         .pagination ul li {
@@ -2648,7 +2722,8 @@ p.quote:before {
             display: block;
             min-width: 34px;
             height: 32px;
-            padding: 0 10px;
+            margin: 5px 0;
+            padding: 0 12px;
             text-align: center;
             font-family: "Myriad Pro", Arial, Verdana, sans-serif;
             font-size: 16px;
@@ -2709,11 +2784,13 @@ p.quote:before {
         }
 
 
-
         .pagination ul li a.prev-page,
         .pagination ul li a.next-page {
-            display: block;
-            min-width: 154px;
+            /*display: block;*/
+            display: inline-block;
+            vertical-align: middle;
+            /*width: 24%;*/
+            min-width: 156px;
             height: auto;
             padding: 0 5px;
             font-family: "Myriad Pro", Arial, Verdana, sans-serif;
@@ -2737,12 +2814,12 @@ p.quote:before {
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54b6c4', endColorstr='#3f8791',GradientType=0 );
         }
 
-        .pagination ul li a.prev-page.active,
-        .pagination ul li a.next-page.active,
-        .pagination ul li a.prev-page:active,
-        .pagination ul li a.next-page:active,
-        .pagination ul li a.prev-page:hover,
-        .pagination ul li a.next-page:hover {
+        .pagination a.prev-page.active,
+        .pagination a.next-page.active,
+        .pagination a.prev-page:active,
+        .pagination a.next-page:active,
+        .pagination a.prev-page:hover,
+        .pagination a.next-page:hover {
             background: rgb(94,201,217);
             background: -moz-linear-gradient(top,  rgba(94,201,217,1) 0%, rgba(90,193,208,1) 100%);
             background: -webkit-linear-gradient(top,  rgba(94,201,217,1) 0%,rgba(90,193,208,1) 100%);
@@ -2751,7 +2828,7 @@ p.quote:before {
 
         }
 
-        .pagination ul li a.prev-page:before {
+        .pagination a.prev-page:before {
             display: inline-block;
             vertical-align: middle;
             content: "\3c\3c";
@@ -2759,7 +2836,7 @@ p.quote:before {
             margin: -3px 0 0 0;
         }
 
-         .pagination ul li a.next-page:after {
+         .pagination a.next-page:after {
             display: inline-block;
             vertical-align: middle;
             content: "\3e\3e";
@@ -3776,47 +3853,26 @@ p.quote:before {
 
 
     .account-table {
-        /*display: table;*/
         display: block;
-        /*border-collapse: collapse;*/
         width: 100%;
         margin: 12px 0 14px 0;
     }
 
     .account-table .account-table-row {
-        /*display: table-row;*/
         display: inline-block;
         vertical-align: middle;
         width: 100%;
         padding: 15px 10px;
         font-size: 0;
         line-height: 0;
-        /*padding: 0 10px;*/
         border-right: 1px solid #dcdcdc;
         border-bottom: 1px solid #dcdcdc;
         border-left: 1px solid #dcdcdc;
     }
 
-/*    .account-table.empty-table .account-table-row {
-        display: block !important;
-        width: 100%;
-        padding: 10px 10px;
-        font-size: 0;
-        line-height: 0;
-    }
-
-    .account-table.empty-table .account-table-header {
-        display: block;
-        font-size: 0;
-        line-height: 0;
-        text-align: left;
-        padding: 0;
-    }*/
-
     .account-table .account-table-header .table-cell {
         display: inline-block;
         vertical-align: middle;
-        /*padding: 5px 10px;*/
     }
 
     .account-table .table-cell.center-txt {
@@ -3824,7 +3880,6 @@ p.quote:before {
     }
 
     .account-table-header {
-        /*display: table-row;*/
         display: block;
         width: 100%;
         padding: 15px 10px;
@@ -3844,38 +3899,70 @@ p.quote:before {
     }
 
     .account-table .table-cell {
-        /*display: table-cell;*/
         display: inline-block;
         vertical-align: middle;
-        /*padding: 12px 0 12px 10px;*/
-        /*padding: 12px 0;*/
     }
 
-/*    .table-two-cols {
-        
+    .account-table.two-cols .table-cell-1 {
+        /*width: 6%;*/
+        width: 75%;
     }
 
-    .table-three-cols {
-
+    .account-table.two-cols .table-cell-2 {
+        /*width: 36%;*/
+        width: 25%;
     }
 
-    .table-four-cols {
+/*    .messages_table.account-table .table-cell-1 {
+        width: 75%;
+    }
 
+    .messages_table.account-table .table-cell-2 {
+        width: 25%;
     }*/
 
-    .account-table .table-cell-1 {
+
+
+    .account-table.three-cols .table-cell-1 {
+/*        width: 6%;*/
+        width: 18%;
+    }
+
+    .account-table.three-cols .table-cell-2 {
+        /*width: 36%;*/
+        width: 66%;
+    }
+
+    .account-table.three-cols .table-cell-3 {
+        /*width: 29%;*/
+        width: 16%;
+    }
+
+/*    .my_questions.account-table .table-cell-1 {
+        width: 18%;
+    }
+
+    .my_questions.account-table .table-cell-2 {
+        width: 66%;
+    }
+
+    .my_questions.account-table .table-cell-3 {
+        width: 16%;
+    }*/
+
+    .account-table.four-cols .table-cell-1 {
         width: 6%;
     }
 
-    .account-table .table-cell-2 {
+    .account-table.four-cols .table-cell-2 {
         width: 36%;
     }
 
-    .account-table .table-cell-3 {
+    .account-table.four-cols .table-cell-3 {
         width: 29%;
     }
 
-    .account-table .table-cell-4 {
+    .account-table.four-cols .table-cell-4 {
         width: 29%;
     }
 
@@ -4173,7 +4260,7 @@ p.quote:before {
         /*padding: 15px 10px;*/
     }
 
-    .my_questions.account-table .table-cell-1 {
+/*    .my_questions.account-table .table-cell-1 {
         width: 18%;
     }
 
@@ -4183,7 +4270,7 @@ p.quote:before {
 
     .my_questions.account-table .table-cell-3 {
         width: 16%;
-    }
+    }*/
 
     .questions-table.account-table {
         margin: 20px 0;
@@ -4314,13 +4401,13 @@ p.quote:before {
         margin: -11px 1px 0 0;
     }
 
-    .messages_table.account-table .table-cell-1 {
+/*    .messages_table.account-table .table-cell-1 {
         width: 75%;
     }
 
     .messages_table.account-table .table-cell-2 {
         width: 25%;
-    }
+    }*/
 
 
     .textarea-box {
@@ -4822,31 +4909,31 @@ footer {
 .soc-nets-list li {
     display: inline-block;
     vertical-align: top;
+    text-align: center;
     padding: 5px 6% 5px 0;
 }
 
 .soc-nets-list li a {
+    display: block;
     width: 40px;
     height: 40px;
     position: relative;
-}
-
-.soc-nets-list li a:before {
-    display: block;
-    content: "";
-    width: 30px;
-    height: 30px;
+    overflow: hidden;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    border-radius: 9px;
     background: rgba(255, 255, 255, 1);
-    position: absolute;
-    top: 5px;
-    left: 5px;
 }
 
 .soc-nets-list li a img {
     display: block;
-    width: 40px;
-    max-height: 40px;
-    height: auto;
+    width: 42px;
+    height: 42px;
+    position: relative;
+    top: -1px;
+    left: -1px;
 }
 
 .payment-system {
