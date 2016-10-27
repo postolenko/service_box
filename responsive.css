@@ -130,7 +130,8 @@
 
 	.aside-wrapp {
         width: 150%;
-        padding: 0 40% 0 2%;
+        border-right: 3px solid #ffffff;
+        padding: 0 40% 0 3%;
         height: 100vh;
     }
 
