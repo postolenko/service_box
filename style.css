@@ -3002,16 +3002,17 @@ p.quote:before {
         }
 
         .soc-nets-tabs {
-            /*display: table;*/
-            /*float: right;*/
-            display: inline-block;
-            vertical-align: middle;
+            display: table;
+            float: right;
+           /* display: inline-block;
+            vertical-align: middle;*/
             width: 38%;
             text-align: right;
         }
 
         .soc-nets-tabs h5 {
             display: table-cell;
+            /*display: inline-block;*/
             vertical-align: middle;
             width: 55%;
             text-align: right;
@@ -3020,6 +3021,7 @@ p.quote:before {
 
         .soc-nets-tabs .soc-nets-list {
             display: table-cell;
+            /*display: inline-block;*/
             vertical-align: middle;
             width: 45%;
             min-width: 170px;

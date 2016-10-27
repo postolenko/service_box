@@ -116,13 +116,79 @@
 	}
 
 
+	/* --  Card Page  --  */
+
+	.card-page .tab .two-cols {
+	    display: block;
+	}
+
+	.card-page .two-cols .col {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		padding: 0;
+	}
+
+	.tab-links-box {
+	    display: inline-block;
+	    vertical-align: middle;
+	    width: 52%;
+	    /*text-align: center;*/
+	}
+
+	.soc-nets-tabs {
+		display: inline-block;
+		width: 48%;
+		text-align: center;
+	}
+
+	.soc-nets-tabs h5 {
+		display: inline-block;
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.soc-nets-tabs .soc-nets-list {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.card-page .two-cols .col-2 {
+	    height: 250px;
+	}
+
+	.card-page .tab .row-col-1 {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+	}
+
+	.card-page .tab .row-col-2 {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+	}
+
+	.row-line .two-cols {
+	    display: block;
+	}
+
+	.row-line .two-cols .col {
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+	}
+
+	.row-line .two-cols .col-2 {
+		display: inline-block;
+		vertical-align: middle;
+		height: 250px;
+	}
 
 
 
-
-
-
-
+	/* --  /Card Page  --  */
 
 
 
@@ -170,6 +236,19 @@
 	}
 
 
+	.tab-links-box {
+	    width: 100%;
+	}
+
+	.card-page .tab-link-item {
+	    width: 50%;
+	    min-width: auto;
+	}
+
+	.soc-nets-tabs {
+		display: none;
+	}
+
 
 	.footer-row-1 h3 {
 		text-align: center;
@@ -213,5 +292,14 @@
 		text-align: center;
 	}
 
+
+}
+
+
+@media only screen and (max-width: 330px) {
+
+	.card-page .tab-link-item {
+	    width: 100%;
+	}
 
 }
