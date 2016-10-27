@@ -212,4 +212,8 @@
 		text-align: center;
 	}
 
+	a.payment-system-link {
+	    top: 0;
+	}
+
 }
