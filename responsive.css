@@ -1,3 +1,18 @@
+@media only screen and (max-width: 960px) {
+
+	.pagination ul li a.prev-page,
+	.pagination ul li a.next-page {
+		min-width: 10px;
+	}
+
+	.pages-num .prev-page span,
+	.pages-num .next-page span {
+		display: none;
+	}
+
+}
+
+
 @media only screen and (max-width: 768px) {
 
 	.row {
@@ -345,6 +360,79 @@
 
 	ul.soc-nets-list li a {
 		width: 40px;
+	}
+
+	.brand-list li {
+		display: inline-block;
+		vertical-align: top;
+		width: 32%;
+		float: none;
+	}
+
+	.sortable-box {
+		display: inline-block;
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.sortable-box p {
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+	}
+
+	.sortable-box .choose-type-box {
+		display: inline-block;
+		vertical-align: middle;
+		width: auto;
+		margin: 10px 0;
+		min-width: 232px;
+	}
+
+	.searching-result-header {
+	    display: none;
+	}
+
+	.result-item {
+		display: block;
+	}
+
+	.result-item .col {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+	}
+
+	.pagination .p-left,
+	.pagination .p-right {
+		text-align: left;
+		width: 100%;
+		padding: 2px 0;
+	}
+
+
+	.pagination ul li {
+		padding: 0 2px;
+	}
+
+	.pagination ul li a {
+		min-width: 24px;
+		padding: 0 5px;
+	}
+
+	.send-error-message p.semibold-txt {
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+		text-align: center;
+		padding: 0 0 10px 0;
+	}
+
+	.send-error-message .form-box {
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+		text-align: center;
 	}
 
 	.footer-row-1 .footer-col {

@@ -2763,14 +2763,14 @@ p.quote:before {
         .pagination ul {
             display: inline-block;
             vertical-align: middle;
-            /*width: 52%;*/
+            width: 100%;
             margin: 5px 0;
         }
 
         .pagination ul li {
             display: inline-block;
             vertical-align: middle;
-            padding: 0 7px;
+            padding: 0 1%;
         }
 
         .pagination ul li:before {
@@ -2778,11 +2778,16 @@ p.quote:before {
         }
 
         .pagination ul li a {
+            /*display: block;
+            min-width: 32px;
+            height: 32px;
+            margin: 5px 0;
+            padding: 0 10px;*/
             display: block;
             min-width: 34px;
             height: 32px;
             margin: 5px 0;
-            padding: 0 12px;
+            padding: 0 28%;
             text-align: center;
             font-family: "Myriad Pro", Arial, Verdana, sans-serif;
             font-size: 16px;
@@ -2904,11 +2909,11 @@ p.quote:before {
         }
 
         .pagination ul li:first-child {
-            padding: 0 7px 0 0;
+            padding: 0 1% 0 0;
         }
 
         .pagination ul li:last-child {
-            padding: 0 0 0 7px;
+            padding: 0 0 0 1%;
         }
 
         .pagination ul .next-page {
