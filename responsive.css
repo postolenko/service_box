@@ -543,6 +543,11 @@
 		min-width: 476px;
 	}
 
+	.account-table-header,
+	.account-table .account-table-row {
+	    padding: 13px 5px;
+	}
+
 	.account-table .table-cell p {
         font-size: 14px;
     }
