@@ -348,6 +348,10 @@
 	    width: 68%;
 	}
 
+	.profile .inputs input + span {
+	    padding: 5px 0 0 31%;
+	}
+
 	.profile .user-form-box .btn-submit-box {
 	    width: 100%;
 	}
