@@ -272,9 +272,20 @@
 		height: 250px;
 	}
 
-
-
 	/* --  /Card Page  --  */
+
+	.result-item .col {
+		padding: 0 3% 0 0;
+	}
+
+	.result-item .col-1 {
+		width: 53%;
+	}
+
+	.result-item .col-3 {
+		width: 24%;
+		padding: 0;
+	}
 
 	.pagination ul li {
 		padding: 0 2px;
