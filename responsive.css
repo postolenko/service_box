@@ -18,10 +18,32 @@
 		font-size: 12px;
 	}
 
+	.profile .tabs .tab-links-box {
+	    display: block;
+	}
+
+	.profile .tabs .tab-link-item {
+		display: inline-block;
+		vertical-align: top;
+		min-width: auto;
+		width: 50%;
+	}
+
+	.profile .tabs .tab-links-list {
+		width: 100%;
+		margin: 2px 0 0 0%;
+		overflow: inherit;
+	}
+
+
 }
 
 
 @media only screen and (max-width: 768px) {
+
+	h2 {
+	    padding: 7px 2%;
+	}
 
 	.row {
 		padding: 0 2%;
@@ -169,6 +191,10 @@
 		padding: 0 2%;
 	}
 
+	.width-18 .sidebar-nav {
+		width: 280px;
+	}
+
 
 
 
@@ -305,7 +331,34 @@
 	}
 
 
+	.profile .tabs .tab-link-item {
+		display: inline-block;
+		padding: 0px 1%;
+	}
 
+	.profile .inputs {
+		width: 100%;
+	}
+
+	.profile .user-form-box .inputs label {
+	    width: 31%;
+	}
+
+	.profile .user-form-box .inputs input {
+	    width: 68%;
+	}
+
+	.profile .user-form-box .btn-submit-box {
+	    width: 100%;
+	}
+
+	.profile .btn-submit-box input[type=submit] {
+	    margin: 10px 0 0px 0;
+	}
+
+	.profile-article-content .three-cols .col {
+		width: 50%;
+	}
 
 
 
@@ -475,6 +528,54 @@
 		width: 100%;
 		text-align: center;
 	}
+
+
+	.profile .tabs .tab-link-item {
+		width: 100%;
+	}
+
+	.profile .input-box {
+		padding: 7px 0;
+	}
+
+	.profile .user-form-box .inputs label {
+		width: 100%;
+		text-align: left;
+		padding: 5px 0;
+	}
+
+	.profile .user-form-box .inputs input {
+	    width: 100%;
+	}
+
+	.profile .inputs input + span {
+	    padding: 5px 0 0 0;
+	}
+
+	.profile .h2-gradient h2.width-checkbox {
+		width: 100%;
+		padding: 0;
+		line-height: 27px;
+	}
+
+	.profile .h2-gradient .checkbox-box {
+		width: 100%;
+		text-align: left;
+	}
+
+	.profile-article-content .two-cols .col {
+		width: 100%;
+	}
+
+	.profile-article-content .three-cols .col {
+	    width: 100%;
+	}
+
+	.checkbox-box input[type=checkbox] + label:before {
+	    top: -3px;
+	}
+
+
 
 	.footer-row-1 .footer-col {
 		width: 100%;
