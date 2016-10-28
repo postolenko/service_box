@@ -7,7 +7,15 @@
 
 	.pages-num .prev-page span,
 	.pages-num .next-page span {
-		display: none;
+		/*display: none;*/
+		font-size: 14px;
+	}
+
+	.pagination a.next-page:after,
+	.pagination a.prev-page:before {
+		/*padding: 0 0 0 1%;*/
+		margin: 1px;
+		font-size: 12px;
 	}
 
 }
@@ -268,11 +276,14 @@
 
 	/* --  /Card Page  --  */
 
+	.pagination ul li {
+		padding: 0 2px;
+	}
 
-
-
-
-
+	.pagination ul li a {
+		min-width: 24px;
+		padding: 0 5px;
+	}
 
 
 
@@ -410,15 +421,21 @@
 		padding: 2px 0;
 	}
 
-
-	.pagination ul li {
-		padding: 0 2px;
+	.pagination ul li a.prev-page span,
+	.pagination ul li a.next-page span {
+		display: none;
+		/*font-size: 14px;*/
 	}
 
-	.pagination ul li a {
-		min-width: 24px;
-		padding: 0 5px;
+	.pagination a.next-page:after,
+	.pagination a.prev-page:before {
+		margin: 1px 4px;
+		font-size: 13px;
+		line-height: 27px;
+		position: relative;
+		top: 1px;
 	}
+
 
 	.send-error-message p.semibold-txt {
 		display: inline-block;

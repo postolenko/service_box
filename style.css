@@ -2794,6 +2794,7 @@ p.quote:before {
             line-height: 32px;
             font-weight: 400;
             color: #7e7e7e;
+            text-align: center;
             border: 1px solid #7e7e7e;
             text-decoration: underline;
         
@@ -2850,18 +2851,21 @@ p.quote:before {
 
         .pagination ul li a.prev-page,
         .pagination ul li a.next-page {
-            /*display: block;*/
-            display: inline-block;
-            vertical-align: middle;
+            display: block;
+            /*display: inline-block;
+            vertical-align: middle;*/
             /*width: 24%;*/
+            /*display: table;*/
             min-width: 156px;
-            height: auto;
+            height: 34px;
             padding: 0 5px;
-            font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+            font-size: 0;
+            line-height: 0;
+            /*font-family: "Myriad Pro", Arial, Verdana, sans-serif;
             font-size: 16px;
             line-height: 32px;
             font-weight: 400;
-            color: #ffffff;
+            color: #ffffff;*/
             border: 1px solid transparent;
             text-align: center;
             text-decoration: none;
@@ -2893,26 +2897,63 @@ p.quote:before {
         }
 
         .pagination a.prev-page:before {
-            display: inline-block;
-            vertical-align: middle;
+            /*display: inline-block;*/
+            /*display: table-cell;*/
+            /*vertical-align: middle;*/
+            /*width: 20%;*/
+            height: 16px;
             content: "\3c\3c";
             padding: 0 3% 0 0;
-            margin: -3px 0 0 0;
+            /*margin: 7px 0 0 0;*/
+            /*position: relative;
+            top: 5px;*/
+            font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #ffffff;
         }
 
          .pagination a.next-page:after {
-            display: inline-block;
-            vertical-align: middle;
+            /*display: inline-block;*/
+            /*display: table-cell;*/
+            /*vertical-align: middle;*/
+            /*width: 20%;*/
+            height: 16px;
             content: "\3e\3e";
             padding: 0 0 0 3%;
-            margin: -3px 0 0 0;
+            /*margin: 7px 0 0 0;*/
+          /*  position: relative;
+            top: 5px;*/
+            font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #ffffff;
+        }
+
+        .pagination ul li a.prev-page span,
+        .pagination ul li a.next-page span {
+            /*display: inline-block;
+            vertical-align: middle;
+            width: 80%;*/
+            /*display: table-cell;*/
+         /*   display: inline-block;
+            vertical-align: middle;*/
+            font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+            font-size: 16px;
+            line-height: 32px;
+            font-weight: 400;
+            color: #ffffff;
         }
 
         .pagination ul li:first-child {
+            min-height: 32px;
             padding: 0 1% 0 0;
         }
 
         .pagination ul li:last-child {
+            min-height: 32px;
             padding: 0 0 0 1%;
         }
 
