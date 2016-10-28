@@ -540,7 +540,20 @@
 	}
 
 	.account-table {
-		min-width: 500px;
+		min-width: 460px;
+	}
+
+	.account-table .table-cell p {
+        font-size: 14px;
+    }
+
+    .account-table .table-cell a {
+        font-size: 14px;
+    }
+
+    .table-cell a.btn-cell {
+	    padding: 2px 3px;
+	    font-size: 14px;
 	}
 
 
