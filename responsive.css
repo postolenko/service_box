@@ -414,6 +414,11 @@
 		width: 100%;
 	}
 
+	.result-item-header .result-link {
+		padding: 3px 0 7px 0;
+		font-size: 18px;
+	}
+
 	.pagination .p-left,
 	.pagination .p-right {
 		text-align: left;
