@@ -4013,6 +4013,7 @@ p.quote:before {
     .account-table .table-cell {
         display: inline-block;
         vertical-align: middle;
+        padding: 0 2px;
     }
 
     .account-table.two-cols .table-cell-1 {

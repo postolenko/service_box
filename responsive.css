@@ -331,7 +331,7 @@
 	}
 
 	.account-table {
-		min-width: 620px;
+		/*min-width: 620px;*/
 	}
 
 
@@ -537,6 +537,10 @@
 		vertical-align: middle;
 		width: 100%;
 		text-align: center;
+	}
+
+	.account-table {
+		min-width: 500px;
 	}
 
 
