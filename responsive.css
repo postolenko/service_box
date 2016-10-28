@@ -556,6 +556,10 @@
 	    font-size: 14px;
 	}
 
+	.account-table.four-cols .table-cell-2 {
+	    padding: 0 2px 0 6px;
+	}
+
 
 	.profile .tabs .tab-link-item {
 		width: 100%;
