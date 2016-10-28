@@ -330,6 +330,10 @@
 		padding: 0 5px;
 	}
 
+	.account-table {
+		min-width: 620px;
+	}
+
 
 	.profile .tabs .tab-link-item {
 		display: inline-block;
@@ -364,7 +368,9 @@
 		width: 50%;
 	}
 
-
+/*	.tab-no-visible {
+		display: none !important;
+	}*/
 
 
 	.footer-row-1 .footer-col {

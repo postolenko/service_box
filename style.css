@@ -3966,6 +3966,10 @@ p.quote:before {
         margin: 12px 0 14px 0;
     }
 
+    /*.with-gorisontal-scroll {
+
+    }*/
+
     .account-table .account-table-row {
         display: inline-block;
         vertical-align: middle;
@@ -4059,11 +4063,11 @@ p.quote:before {
     }*/
 
     .account-table.four-cols .table-cell-1 {
-        width: 6%;
+        width: 8%;
     }
 
     .account-table.four-cols .table-cell-2 {
-        width: 36%;
+        width: 34%;
     }
 
     .account-table.four-cols .table-cell-3 {
