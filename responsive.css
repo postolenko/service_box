@@ -282,6 +282,14 @@
 		width: 53%;
 	}
 
+	.searching-result-header .col-1 {
+		width: 53%;
+	}
+
+	.searching-result-header .col-3 {
+		width: 24%;
+	}
+
 	.result-item .col-3 {
 		width: 24%;
 		padding: 0;
