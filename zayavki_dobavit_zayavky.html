@@ -22,8 +22,11 @@
 
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 
+	<link rel="stylesheet" href="vendors/css/jquery.mCustomScrollbar.css" />
 
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
+
+	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 
 	<script type="text/javascript" src="slick/slick.js"></script>
 
@@ -46,7 +49,7 @@
 
 	<!-- Header -->
 
-	<header>
+		<header>
 
 		<div class="header">
 			
@@ -55,6 +58,8 @@
 				<div class="row offset-ziro">
 
 					<div class="main-nav-block left-col">
+
+						<button type="button" class="close-resp-nav-btn">&#215;</button>
 						
 						<nav>
 							
@@ -72,7 +77,9 @@
 
 					</div>
 
-					<div class="right-col">
+					<div class="right-col clearfix">
+
+						<button type="button" class="resp-nav-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
 						
 						<div class="search-box">
 
@@ -82,17 +89,28 @@
 
 						<div class="favorite-box">
 
-							<i class="fa fa-heart" aria-hidden="true"></i>
-							<a class="header-link favorite-link" href="#">Добавить</a>
+							<a href="#" class="favorite-link"><i class="fa fa-heart" aria-hidden="true"></i>Добавить</a>
 
 						</div>
 
+						
 						<div class="enter-box">
 
-							<i class="fa fa-user" aria-hidden="true"></i>
-							<a class="header-link enter-link" href="#">Войти</a>
+							<a href="#" class="enter-link"><i class="fa fa-user" aria-hidden="true"></i>Войти</a>
 
 						</div>
+
+						<!-- <div class="enter-box entered">
+
+							<div class="avatar-box">
+								
+								<img src="img/user_photo.jpg" alt="">
+
+							</div>
+
+							<a href="#" class="show-account-menu"><i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+
+						</div> -->
 
 					</div>
 
@@ -140,91 +158,97 @@
 					
 					<div class="with-sidebar-section row clearfix">
 
+						<button class="show-sidebar-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+
 						<div class="sidebar right width-28">
 
-							<aside>
+							<div class="aside-wrapp with-scroll">
 
-								<div class="sidebar-nav">
+								<aside>
 
-									<nav>
-										
-										<ul class="sidebar-nav-list accordeon">
+									<div class="sidebar-nav">
 
-											<li>
+										<nav>
+											
+											<ul class="sidebar-nav-list accordeon">
 
-												<a href="#">Категория, производитель, модель</a>
+												<li>
 
-												<div class="tip-box-wrapp">
-													
-													<div class="tip-box">
+													<a href="#">Категория, производитель, модель</a>
 
-														<p>Важно точно указать категорию, производителя и модель продукта, по которому вы задаёте вопрос. Это значительно облегчит мастерам и экспертам задачу и повысит ваши шансы на получение полезного решения.</p>
+													<div class="tip-box-wrapp">
+														
+														<div class="tip-box">
 
-														<p>Если у вас нет возможности уточнить модель можно оставить это поле пустым.</p>
+															<p>Важно точно указать категорию, производителя и модель продукта, по которому вы задаёте вопрос. Это значительно облегчит мастерам и экспертам задачу и повысит ваши шансы на получение полезного решения.</p>
 
-													</div>
+															<p>Если у вас нет возможности уточнить модель можно оставить это поле пустым.</p>
 
-												</div>
-
-											</li>
-
-											<li>
-
-												<a href="#">Город, адрес</a>
-
-												<div class="tip-box-wrapp">
-													
-													<div class="tip-box">
-															
-														<p>Важно точно указать категорию, производителя и модель продукта, по которому вы задаёте вопрос. Это значительно облегчит мастерам и экспертам задачу и повысит ваши шансы на получение полезного решения.</p>
+														</div>
 
 													</div>
 
-												</div>
+												</li>
 
-											</li>
+												<li>
 
-											<li>
+													<a href="#">Город, адрес</a>
 
-												<a href="#">Подробная информация</a>
+													<div class="tip-box-wrapp">
+														
+														<div class="tip-box">
+																
+															<p>Важно точно указать категорию, производителя и модель продукта, по которому вы задаёте вопрос. Это значительно облегчит мастерам и экспертам задачу и повысит ваши шансы на получение полезного решения.</p>
 
-												<div class="tip-box-wrapp">
-													
-													<div class="tip-box">
-															
-														<p>Важно точно указать категорию, производителя и модель продукта, по которому вы задаёте вопрос. Это значительно облегчит мастерам и экспертам задачу и повысит ваши шансы на получение полезного решения.</p>
-
-														<p>Если у вас нет возможности уточнить модель можно оставить это поле пустым.</p>
+														</div>
 
 													</div>
 
-												</div>
+												</li>
 
-											</li>
+												<li>
 
-											<li>
+													<a href="#">Подробная информация</a>
 
-												<a href="#">Изображения</a>
+													<div class="tip-box-wrapp">
+														
+														<div class="tip-box">
+																
+															<p>Важно точно указать категорию, производителя и модель продукта, по которому вы задаёте вопрос. Это значительно облегчит мастерам и экспертам задачу и повысит ваши шансы на получение полезного решения.</p>
 
-												<div class="tip-box-wrapp">
-													
-													<div class="tip-box">
-															
-														<p>Важно точно указать категорию, производителя и модель продукта, по которому вы задаёте вопрос. Это значительно облегчит мастерам и экспертам задачу и повысит ваши шансы на получение полезного решения.</p>
+															<p>Если у вас нет возможности уточнить модель можно оставить это поле пустым.</p>
+
+														</div>
 
 													</div>
 
-												</div>
+												</li>
 
-											</li>
+												<li>
 
-										</ul>
+													<a href="#">Изображения</a>
 
-									</nav>
+													<div class="tip-box-wrapp">
+														
+														<div class="tip-box">
+																
+															<p>Важно точно указать категорию, производителя и модель продукта, по которому вы задаёте вопрос. Это значительно облегчит мастерам и экспертам задачу и повысит ваши шансы на получение полезного решения.</p>
 
-								</div>						
+														</div>
 
-							</aside>
+													</div>
+
+												</li>
+
+											</ul>
+
+										</nav>
+
+									</div>						
+
+								</aside>
+
+							</div>
 
 						</div>
 
@@ -619,6 +643,22 @@
 			 //    }
 			 //  ]
 			});
+
+			(function($){
+
+				$(window).on("load",function(){
+
+					$(".main-nav-list").mCustomScrollbar();
+
+				    $(".aside-wrapp.with-scroll").mCustomScrollbar();
+
+				    $(".with-gorisontal-scroll").mCustomScrollbar({
+				    	axis:"x"
+				    });
+
+				});
+
+			})(jQuery);
 
 		</script>
 	

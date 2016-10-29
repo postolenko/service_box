@@ -135,7 +135,8 @@
 
 
 
-	.sidebar.left {
+	.sidebar.left,
+	.sidebar.right {
 		display: block;
 		min-width: 300px;
 		float: none;
@@ -169,7 +170,8 @@
 	    transition-timing-function: ease;
 	}
 
-	.sidebar.left.show {
+	.sidebar.left.show,
+	.sidebar.right.show {
 		left: 0;
 	}
 
@@ -180,8 +182,20 @@
         height: 100vh;
     }
 
+	.sidebar.right.width-28 {
+		border-right: 2px solid #ffffff; 
+	}
+
+	.sidebar.right.width-28 .aside-wrapp {
+	    padding: 0 50% 0 3%;
+	}
+
 	.show-sidebar-btn {
 		display: block;
+	}
+
+	.width-18 .sidebar-nav {
+		width: 280px;
 	}
 
 	.with-sidebar-section .main-content {
@@ -191,11 +205,23 @@
 		padding: 0 2%;
 	}
 
-	.width-18 .sidebar-nav {
-		width: 280px;
+	.with-sidebar-section .main-content.profile.left.width-72 {
+		width: 100%;
+		padding: 0 2%;
+		float: none;
 	}
 
+	.add-req-row .three-cols .col {
+	    width: 50%;
+	}
 
+	.add-req-row .three-cols .col:nth-child(n + 1){
+		padding: 0 0 0 1.5%;
+	}
+
+	.add-req-row .three-cols .col:nth-child(2n + 1){
+		padding: 0 1.5% 0 0;
+	}
 
 
 
@@ -393,6 +419,10 @@
 
 @media only screen and (max-width: 480px) {
 
+	h2 {
+	    line-height: 25px;
+	}
+
 	img.left,
 	img.right {
 		display: block;
@@ -560,8 +590,17 @@
 		font-size: 17px;
 	}
 
-	.questions-table.account-table {
+	.questions-table.account-table,
+	.account-table.resp-width-auto {
 		min-width: auto;
+	}
+
+	.account-table.two-cols.resp-width-auto .table-cell-1 {
+	    width: 63%;
+	}
+
+	.account-table.two-cols.resp-width-auto .table-cell-2 {
+	    width: 37%;
 	}
 
 	.questions-table.account-table h3 {
@@ -631,6 +670,30 @@
 
 	.profile-article-content .three-cols .col {
 	    width: 100%;
+	}
+
+	.add-req-row .two-cols .col {
+		width: 100%;
+	}
+
+	.add-req-row .two-cols .col-1,
+	.add-req-row .two-cols .col-2 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.add-req-row .three-cols .col {
+		width: 100%;
+		padding-top: 9px;
+		padding-bottom: 9px;
+	}
+
+	.add-req-row .three-cols .col:nth-child(n + 1){
+		padding: 9px 0;
+	}
+
+	.add-req-row .three-cols .col:nth-child(2n + 1){
+		padding: 9px 0;
 	}
 
 	.checkbox-box input[type=checkbox] + label:before {

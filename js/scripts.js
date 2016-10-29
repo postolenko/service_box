@@ -190,7 +190,7 @@ $(function() {
 
          $(".show-sidebar-btn").click(function() {
 
-             $(".sidebar.left, .show-sidebar-btn").toggleClass("show");
+             $(".sidebar.left, .sidebar.right, .show-sidebar-btn").toggleClass("show");
 
         });
 
