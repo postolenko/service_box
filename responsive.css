@@ -351,7 +351,7 @@
 		display: block;
 		float: left;
 		height: auto;
-		width: auto;
+		/*width: auto;*/
     	margin: 0 0 3px 0;
 	}
 
@@ -556,10 +556,6 @@
 	.result-item-header .result-link {
 		padding: 3px 0 7px 0;
 		font-size: 16px;
-	}
-
-	.result-item .checked-mark {
-	    display: none;
 	}
 
 	.pagination .p-left,
