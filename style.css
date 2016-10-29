@@ -2486,7 +2486,6 @@ p.quote:before {
             vertical-align: top;
             /*width: 26%;*/
             width: 26%;
-            min-width: 50px;
             padding: 0 2% 0 0;
         }
 
@@ -2494,8 +2493,10 @@ p.quote:before {
             display: block;
             width: 99%;
             max-width: 90px;
-            margin: 0 auto;
+            min-width: 50px;
+            margin: 0 2% 0 0;
             overflow: hidden;
+
         }
 
         .inner-col-1 .img-box img {
