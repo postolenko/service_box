@@ -342,6 +342,10 @@
 		width: 24%;
 	}
 
+	.result-item .checked-mark {
+		margin-left: 0 !important;
+	}
+
 	.result-item .col-3 {
 		width: 24%;
 		padding: 0;
