@@ -4034,16 +4034,14 @@ p.quote:before {
         width: 25%;
     }*/
 
-
-
     .account-table.three-cols .table-cell-1 {
 /*        width: 6%;*/
-        width: 18%;
+        width: 19%;
     }
 
     .account-table.three-cols .table-cell-2 {
         /*width: 36%;*/
-        width: 66%;
+        width: 65%;
     }
 
     .account-table.three-cols .table-cell-3 {

@@ -543,6 +543,32 @@
 		min-width: 476px;
 	}
 
+	.questions-links-list li {
+	    width: 100%;
+	}
+
+	.questions-links-list li:nth-child(n + 1),
+	.questions-links-list li:nth-child(2n) {
+		padding: 0;
+	}
+
+	.account-table-header .table-cell-2 a.del-link {
+		font-size: 0;
+	}
+
+	.account-table-header .table-cell-2 a.del-link .fa {
+		font-size: 17px;
+	}
+
+	.questions-table.account-table {
+		min-width: auto;
+	}
+
+	.questions-table.account-table h3 {
+		font-size: 17px;
+		line-height: 20px;
+	}
+
 	.account-table-header,
 	.account-table .account-table-row {
 	    padding: 12px 5px;
