@@ -350,8 +350,10 @@
 	.inner-col-1 {
 		display: block;
 		float: left;
-		height: auto;
+		/*height: auto;*/
 		/*width: auto;*/
+		height: 55px;
+		width: 65px;
     	margin: 0 0 3px 0;
 	}
 
