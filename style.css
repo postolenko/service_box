@@ -2481,8 +2481,8 @@ p.quote:before {
         }
 
         .inner-col-1 {
-            /*display: inline-block;*/
-            display: table-cell;
+            display: inline-block;
+            /*display: table-cell;*/
             vertical-align: top;
             /*width: 26%;*/
             width: 26%;
@@ -2505,10 +2505,10 @@ p.quote:before {
         }
 
         .inner-col-2 {
-            /*display: inline-block;*/
-            display: table-cell;
+            display: inline-block;
+            /*display: table-cell;*/
             vertical-align: top;
-            /*width: 74%;*/
+            width: 74%;
         }
 
         .inner-col-2-h {

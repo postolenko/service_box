@@ -347,6 +347,19 @@
 		padding: 0;
 	}
 
+	.inner-col-1 {
+		display: block;
+		float: left;
+		height: auto;
+		width: auto;
+    	margin: 0 0 3px 0;
+	}
+
+	.inner-col-2 {
+		display: block;
+		width: auto; 
+	}
+
 	.pagination ul li {
 		padding: 0 2px;
 	}
@@ -526,13 +539,19 @@
 		width: 100%;
 	}
 
+/*
 	.inner-col-1 {
 		display: inline-block;
 	}
 
 	.inner-col-2 {
 		display: inline-block;
-	}
+	}*/
+
+/*	.inner-col-1 {
+		width: 110px;
+		float: left;
+	}*/
 
 	.result-item-header .result-link {
 		padding: 3px 0 7px 0;
