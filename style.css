@@ -2468,6 +2468,7 @@ p.quote:before {
         }
 
         .result-item .col-1 {
+            display: table-cell;
             width: 58%;
         }
 
@@ -2480,9 +2481,12 @@ p.quote:before {
         }
 
         .inner-col-1 {
-            display: inline-block;
+            /*display: inline-block;*/
+            display: table-cell;
             vertical-align: top;
+            /*width: 26%;*/
             width: 26%;
+            min-width: 50px;
             padding: 0 2% 0 0;
         }
 
@@ -2500,9 +2504,10 @@ p.quote:before {
         }
 
         .inner-col-2 {
-            display: inline-block;
+            /*display: inline-block;*/
+            display: table-cell;
             vertical-align: top;
-            width: 74%;
+            /*width: 74%;*/
         }
 
         .inner-col-2-h {

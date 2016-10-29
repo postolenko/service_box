@@ -526,6 +526,14 @@
 		width: 100%;
 	}
 
+	.inner-col-1 {
+		display: inline-block;
+	}
+
+	.inner-col-2 {
+		display: inline-block;
+	}
+
 	.result-item-header .result-link {
 		padding: 3px 0 7px 0;
 		font-size: 18px;
