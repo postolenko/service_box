@@ -666,10 +666,12 @@
 
 	.profile-article-content .two-cols .col {
 		width: 100%;
+		/*padding: 0 !important;*/
 	}
 
 	.profile-article-content .three-cols .col {
 	    width: 100%;
+	    /*padding: 0 !important;*/
 	}
 
 	.add-req-row .two-cols .col {
