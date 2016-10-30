@@ -5003,7 +5003,7 @@ p.quote:before {
         background-position: 0 0;
         background-repeat: no-repeat;
         position: absolute;
-        top: -4px;
+        top: -3px;
         left: 0;
         z-index: 2;
     }
