@@ -5342,6 +5342,11 @@ p.quote:before {
     .input-box.input-middle-width .account-blue-link {
         margin: 0 0 0 2%;
         padding: 5px 10px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 31%;
+        max-width: 31%;
+        text-align: center;
     }
 
     .help-box span {
