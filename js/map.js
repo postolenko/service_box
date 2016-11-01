@@ -1,6 +1,7 @@
 if( document.getElementsByClassName("map-box")[0] ) {
 
 			var map;
+			var map3;
 
 			var marker;
 			var image = 'img/marker.png';
@@ -49,6 +50,14 @@ if( document.getElementsByClassName("map-box")[0] ) {
 					zoom: 14
 				});
 
+				map3 = new google.maps.Map(document.getElementById('map3'), {
+					center: {lat: 55.895924, lng: 37.6017443},
+					// 59.9711252,30.2972661
+					scrollwheel: false,
+					scaleControl: false,
+					zoom: 14
+				});
+
 				marker = new google.maps.Marker({
 					map: map,
 					draggable: false,
@@ -64,6 +73,9 @@ if( document.getElementsByClassName("map-box")[0] ) {
 				//Associate the styled map with the MapTypeId and set it to display.
 				map.mapTypes.set('map_style', styledMap);
 				map.setMapTypeId('map_style');
+
+				map3.mapTypes.set('map_style', styledMap);
+				map3.setMapTypeId('map_style');
 
 
 			}
