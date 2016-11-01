@@ -5322,7 +5322,7 @@ p.quote:before {
         position: relative;
     }
 
-    .contacts-sc-form .map-box #map3 {
+    #map3 {
         display: block;
         width: 100%;
         height: 100%;
@@ -5379,6 +5379,7 @@ p.quote:before {
         display: inline-block;
         vertical-align: top;
         width: 71%;
+        max-width: 71%;
         height: 100px;
         margin: 0 0 0 1%;
         padding: 10px;
@@ -5387,6 +5388,7 @@ p.quote:before {
         line-height: 18px;
         font-weight: 400;
         color: #7b7b7b;
+        background: rgba(250, 250, 250, 1);
         border: 1px solid #dcdcdc;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;

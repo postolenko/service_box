@@ -74,9 +74,6 @@ if( document.getElementsByClassName("map-box")[0] ) {
 				map.mapTypes.set('map_style', styledMap);
 				map.setMapTypeId('map_style');
 
-				map3.mapTypes.set('map_style', styledMap);
-				map3.setMapTypeId('map_style');
-
 
 			}
 
