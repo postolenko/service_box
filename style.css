@@ -561,6 +561,23 @@ p.quote:before {
     z-index: 2;
 }
 
+.h2-gradient.with-important-tip {
+    display: table;
+    width: 100%;
+}
+
+.h2-gradient.with-important-tip h2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.h2-gradient.with-important-tip p.pink {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+
 .breacrumbs {
     border: 1px solid #dcdcdc;
     -webkit-border-radius: 4px;
@@ -3732,7 +3749,8 @@ p.quote:before {
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54b6c4', endColorstr='#3f8792',GradientType=0 );
         }
 
-        .profile .attentive-message {
+        /*.profile .attentive-message {*/
+        .attentive-message {
             display: block;
             margin: 10px 0 15px 0;
             padding: 10px;
@@ -3744,7 +3762,8 @@ p.quote:before {
             border-radius: 4px;
         }
 
-        .profile .attentive-message h5 {
+        /*.profile .attentive-message h5 {*/
+        .attentive-message h5 {
             font-family: "Myriad Pro", Arial, Verdana, sans-serif;
             font-size: 16px;
             line-height: 18px;
@@ -3753,7 +3772,8 @@ p.quote:before {
             padding: 0;
         }
 
-        .profile .attentive-message p {
+        /*.profile .attentive-message p {*/
+        .attentive-message p {
             font-family: "Myriad Pro", Arial, Verdana, sans-serif;
             font-size: 16px;
             line-height: 18px;
@@ -4799,7 +4819,8 @@ p.quote:before {
     }
 
     .input-box input[type=text],
-    .input-box input[type=email] {
+    .input-box input[type=email],
+    .input-box input[type=password] {
         display: block;
         width: 100%;
         min-height: 32px;
@@ -5933,6 +5954,197 @@ p.quote:before {
     }
 
 
+
+    .steps {
+
+    }
+
+    .steps-link-list {
+        width: 101%;
+        margin: 0 0 0 -.5%;
+    }
+
+    .steps-link-list li {
+        display: inline-block;
+        vertical-align: top;
+        width: 20%;
+        padding: 5px .5%;
+    }
+
+    .step-link {
+        display: block;
+        width: 100%;
+        padding: 5px 2px;
+        text-align: center;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        border-radius: 4px;
+        background: rgb(94,201,217);
+        background: -moz-linear-gradient(top,  rgba(94,201,217,1) 0%, rgba(90,193,208,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(94,201,217,1) 0%,rgba(90,193,208,1) 100%);
+        background: linear-gradient(to bottom,  rgba(94,201,217,1) 0%,rgba(90,193,208,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ec9d9', endColorstr='#5ac1d0',GradientType=0 );
+    }
+
+    .step-link:link,
+    .step-link:visited {
+        background: rgb(94,201,217);
+        background: -moz-linear-gradient(top,  rgba(94,201,217,1) 0%, rgba(90,193,208,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(94,201,217,1) 0%,rgba(90,193,208,1) 100%);
+        background: linear-gradient(to bottom,  rgba(94,201,217,1) 0%,rgba(90,193,208,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ec9d9', endColorstr='#5ac1d0',GradientType=0 );
+    }
+
+    .step-link.active,
+    .step-link:active {
+        background: rgb(85,182,196);
+        background: -moz-linear-gradient(top,  rgba(85,182,196,1) 0%, rgba(63,135,146,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(85,182,196,1) 0%,rgba(63,135,146,1) 100%);
+        background: linear-gradient(to bottom,  rgba(85,182,196,1) 0%,rgba(63,135,146,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55b6c4', endColorstr='#3f8792',GradientType=0 );
+    }
+
+    .step-link:hover {
+        background: rgb(85,182,196);
+        background: -moz-linear-gradient(top,  rgba(85,182,196,1) 0%, rgba(63,135,146,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(85,182,196,1) 0%,rgba(63,135,146,1) 100%);
+        background: linear-gradient(to bottom,  rgba(85,182,196,1) 0%,rgba(63,135,146,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55b6c4', endColorstr='#3f8792',GradientType=0 );
+    }
+
+    .step-link h5 {
+        font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: normal;
+        color: #ffffff;
+        padding: 0;
+    }
+
+    .step-link p {
+        font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: normal;
+        color: #ffffff;
+        padding: 0;
+    }
+
+.step-content {
+
+}
+
+.input-box {
+    padding: 10px 0;
+}
+
+.input-box label.important {
+    position: relative;
+    /*padding: 0 2% 0 0;*/
+}
+
+.input-box label.important:after {
+    display: block;
+    content: "*";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: -2px;
+    right: 2px;
+    font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #c06a78;
+}
+
+.input-box label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 13%;
+    padding: 0 1.5% 0 0;
+    font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #171717;
+    text-align: right;
+}
+
+.step-content .input-box input[type=text],
+.step-content .input-box input[type=password],
+.step-content .input-box input[type=email] {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+}
+
+.step-content .input-box input[type=text] + span,
+.step-content .input-box input[type=password] + span,
+.step-content .input-box input[type=email] + span {
+    display: block;
+    padding: 5px 0 0 13%;
+    font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #7e7e7e;
+}
+
+.step-content .checkbox-box {
+    padding: 10px 0 15px 13%;
+}
+
+.step-content .checkbox-box label {
+    font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #171717;
+}
+
+.step-content .checkbox-box .blue-link {
+    font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #0088cc;
+    text-decoration: underline;
+}
+
+.step-content .checkbox-box .blue-link:link,
+.step-content .checkbox-box .blue-link:visited {
+    text-decoration: underline;
+}
+
+.step-content .checkbox-box .blue-link.active,
+.step-content .checkbox-box .blue-link:active {
+    text-decoration: none;
+}
+
+.step-content .checkbox-box .blue-link:hover {
+    text-decoration: none;
+}
+
+.blue-btn.next-step {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 17px;
+    cursor: pointer;
+    font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+    border: 1px solid transparent;
+    background: rgba(90, 193, 208, 1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
