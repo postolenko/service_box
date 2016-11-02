@@ -18,4 +18,4 @@
 # http://postolenko.github.io/service_box/moi_obyavleniya_contakti_servisnogo_tsentra_2.html
 # http://postolenko.github.io/service_box/moi_obyavleniya_contakti_servisnogo_tsentra_3.html
 # http://postolenko.github.io/service_box/steps.html
-# http://postolenko.github.io/service_box/steps_2.html
+# http://postolenko.github.io/service_box/step_2.html
