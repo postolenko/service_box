@@ -6128,10 +6128,10 @@ p.quote:before {
     text-decoration: none;
 }
 
-.blue-btn.next-step {
+.blue-btn.prev-next-step {
     display: inline-block;
     vertical-align: top;
-    padding: 5px 17px;
+    padding: 7px 17px;
     cursor: pointer;
     font-family: "Myriad Pro", Arial, Verdana, sans-serif;
     font-size: 14px;
@@ -6145,6 +6145,303 @@ p.quote:before {
     -o-border-radius: 4px;
     border-radius: 4px;
 }
+
+.blue-btn.prev-next-step:hover {
+    background: rgb(84,182,196);
+    background: -moz-linear-gradient(top,  rgba(84,182,196,1) 0%, rgba(63,135,145,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(84,182,196,1) 0%,rgba(63,135,145,1) 100%);
+    background: linear-gradient(to bottom,  rgba(84,182,196,1) 0%,rgba(63,135,145,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54b6c4', endColorstr='#3f8791',GradientType=0 );
+}
+
+.step-content {
+
+}
+
+.step-2-links-box.two-cols {
+    padding: 0 0 10px 0;
+}
+
+.step-2-links-box.two-cols .col {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.step-2-links-box.two-cols .col-1 {
+    text-align: right;
+    width: 13%;
+    padding: 5px 1.5% 0 0;
+}
+
+.step-2-links-box.two-cols .col-2 {
+    width: 87%;
+    padding: 0 0 0 3px;
+}
+
+.step-2-links-box.two-cols .col-1 h3 {
+    font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #171717;
+}
+
+.step-2-links-list li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 1.7% 5px 0;
+}
+
+.step-2-links-list li .step-type-link {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 7px 15px;
+    background: rgba(255, 255, 255, 1);
+    font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #5b7bbb;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #dcdcdc;
+}
+
+.step-2-links-list li .step-type-link:link,
+.step-2-links-list li .step-type-link:visited {
+    color: #5b7bbb;
+    border: 1px solid #dcdcdc;
+    background: rgba(255, 255, 255, 1);
+}
+
+.step-2-links-list li .step-type-link.active,
+.step-2-links-list li .step-type-link:active {
+    color: #ffffff;
+    border: 1px solid rgb(84,182,196);
+    background: rgb(84,182,196);
+    background: -moz-linear-gradient(top,  rgba(84,182,196,1) 0%, rgba(63,135,145,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(84,182,196,1) 0%,rgba(63,135,145,1) 100%);
+    background: linear-gradient(to bottom,  rgba(84,182,196,1) 0%,rgba(63,135,145,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54b6c4', endColorstr='#3f8791',GradientType=0 );
+}
+
+.step-2-links-list li .step-type-link:hover {
+    color: #ffffff;
+    border: 1px solid rgb(84,182,196);
+    background: rgb(84,182,196);
+    background: -moz-linear-gradient(top,  rgba(84,182,196,1) 0%, rgba(63,135,145,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(84,182,196,1) 0%,rgba(63,135,145,1) 100%);
+    background: linear-gradient(to bottom,  rgba(84,182,196,1) 0%,rgba(63,135,145,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54b6c4', endColorstr='#3f8791',GradientType=0 );
+}
+
+.step-form {
+
+}
+
+.select-box {
+    padding: 10px 0;
+}
+
+.select-box label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 13%;
+    font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #171717;
+    text-align: right;
+    padding: 0 1.5% 0 0;
+}
+
+.select-box select {
+    display: inline-block;
+    vertical-align: middle;
+    width: 26%;
+    font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #7b7b7b;
+}
+
+.select-box span {
+    display: block;
+    font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #7e7e7e;
+    padding: 7px 0 0 13%;
+}
+
+.input-box .blue-btn {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 170px;
+    cursor: pointer;
+    margin: 0 0 0 2%;
+    background: rgba(93, 200, 215, 1);
+    padding: 5px 10px;
+    font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.coor-box {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin: 10px 0;
+    border: 1px solid #dcdcdc;
+    background: rgba(250, 250, 250, 1);
+    text-align: center;
+}
+
+.coor-box p {
+    display: block;
+    position: relative;
+    top: 50%;
+    margin: -10px 0 0 0;
+    font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #171717;
+}
+
+.step-form .input-box .help-box span {
+    padding: 7px 0 0 13%;
+}
+
+.step-form .choose-time-col-1,
+.step-form .choose-time-col-2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.step-form .choose-time-link {
+    display: inline-block;
+    vertical-align: top;    
+    font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #bb5b6b;
+    text-decoration: underline;
+}
+
+
+.choose-time-link:link,
+.choose-time-link:visited {
+    text-decoration: underline;
+}
+
+.choose-time-link.active,
+.choose-time-link:active {
+    text-decoration: none;
+}
+
+.step-form .choose-time {
+    padding: 10px 0;
+}
+
+.choose-time-link:hover {
+    text-decoration: none;
+}
+
+.step-form .choose-time-row {
+    padding: 7px 0;
+}
+
+.step-form .choose-time-col-1 {
+    width: 12%;
+    padding: 14px 0 0 0;
+}
+
+.step-form .choose-time-col-2 {
+    width: 88%;
+}
+
+.step-form .choose-time select {
+    max-width: 70px;
+}
+
+.step-form .radioboxes-row {
+    padding: 6px 0 6px 12%;
+}
+
+.step-form .radio-box {
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px 3% 6px 1%;
+}
+
+.textarea-box.two-cols {
+
+}
+
+.step-form .textarea-box {
+    border-top: 1px solid transparent;
+}
+
+.step-form .textarea-box.two-cols .col {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.step-form .textarea-box.two-cols .col-1 {
+    width: 12%;
+    padding: 18px 0 0 0;
+}
+
+.step-form .textarea-box.two-cols .col-1 label {
+    width: 100%;
+}
+
+.step-form .textarea-box.two-cols .col-2 {
+    width: 87%;
+}
+
+.step-form .textarea-box.two-cols .col-2 .textarea-box {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.step-form .textarea-box.two-cols .col-2 .textarea-box textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: rgba(250, 250, 250, 1);
+    border: 1px solid #dcdcdc;
+    font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #7b7b7b;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    padding: 10px 12px;
+}
+
+.step-form .prev-next-step {
+    margin: 20px 0;
+}
+
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
