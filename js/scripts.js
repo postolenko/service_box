@@ -213,6 +213,38 @@ $(function() {
     });
 
 
+// ---------------------------------------------------------
+
+
+    $(function() {
+
+        var indexCh;
+
+        $(".table-manufacturer-row .checkbox-box input[type=checkbox]").click(function() {
+
+            indexCh = $(".table-manufacturer-row .checkbox-box input[type=checkbox]").index(this);
+
+            $(".close-fade-row-btn:eq("+ indexCh +")").toggleClass("blue-color");
+
+        });
+
+    });
+
+
+    $(function() {
+
+        var indexCloseTableRow;
+
+        $(".table-manufacturer-row .close-fade-row-btn").click(function() {
+
+            indexCloseTableRow = $(".table-manufacturer-row .close-fade-row-btn").index(this);
+            console.log(indexCloseTableRow);
+
+            $(".table-three-cols-manufacturer .fade-row:eq("+ indexCloseTableRow +")").fadeOut(100);
+
+        });
+
+    });
 
 // ---------------------------------------------------------
 
