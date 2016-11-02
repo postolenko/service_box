@@ -5401,6 +5401,297 @@ p.quote:before {
         margin: 15px 0;
     }
 
+    .category-manufacturer-form .h2-gradient {
+        position: relative;
+        z-index: 2;
+    }
+
+    .fade-box {
+        margin: -4px 0 24px 0;
+        border: 1px solid #dcdcdc;
+    }
+
+    .fade-box .fade-box-header {
+        display: block;
+        width: 100%;
+        padding: 0 15px;
+        position: relative;
+        padding: 13px 2% 15px 2%;
+        /*border-top: 1px solid #dcdcdc;*/
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+ /*   .fade-box:nth-child(1) {
+        border-top: 1px solid transparent;
+        padding: 15px 15px 14px 15px;
+    }*/
+
+    .fade-box-header h3 {
+        font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #171717;
+        padding: 0 15px 0 0;
+    }
+
+    .fade-box-content {
+        display: block;
+        width: 100%;
+        padding: 13px 2% 15px 2%;
+    }
+
+    .close-fade {
+        display: block;
+        width: 15px;
+        min-height: 32px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .close-fade-box-btn {
+        display: block;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 16px;
+        right: 15px;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 15px;
+        color: #a7a7a7;
+        border: 1px solid transparent;
+        background: transparent;
+    }
+
+    .close-fade-box-btn .fa.fa-times {
+        position: relative;
+        top: -3px;
+        left: -1px;
+    }
+
+    .close-fade-tooltip {
+        display: none;
+        /*display: block;*/
+        width: 186px;
+        position: absolute;
+        top: 8%;
+        left: -210px;
+        padding: 5px 8px;
+        z-index: 3;
+        text-align: center;
+        background: rgba(44, 95, 102, 1);
+    }
+
+    .close-fade:hover .close-fade-tooltip {
+        display: block;
+    }
+
+    .close-fade-tooltip:after {
+        display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        margin: -8px 0 0 -10px;
+        border-top: 8px solid transparent;
+        border-left: 7px solid rgba(44, 95, 102, 1);
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        right: -7px;
+        top: 50%;
+    }
+
+    .close-fade-tooltip p {
+        font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+        font-size: 14px;
+        line-height: 15px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    .checkboxes-arr {
+        /*padding: 0 15px;*/
+    }
+
+    .checkboxes-arr .checkbox-box {
+        display: inline-block;
+        vertical-align: middle;
+        width: auto;
+        padding: 9px 10px 9px 0;
+    }
+
+    .checkboxes-arr .checkbox-box label {
+        font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #171717;
+    }
+
+
+    .checkbox-box .chosse-plus-box {
+        display: inline-block;
+        vertical-align: middle;
+        width: auto;
+        margin: 0 0 0 5px;
+        position: relative;
+    }
+
+    .checkbox-box .chosse-plus {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px;
+        background: rgba(94, 201, 216, 1);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .checkbox-box .chosse-plus button {
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        border: 1px solid transparent;
+        background: transparent;
+    }
+
+    .checkbox-box .chosse-plus button .fa-plus {
+        font-size: 14px;
+        line-height: 18px;
+        color: #ffffff;
+        padding: 0 3px 0 0;
+    }
+
+    .checkbox-box .chosse-plus p {
+        display: inline-block;
+        vertical-align: middle;
+        font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #ffffff;
+        padding: 0 0 0 5px;
+    }
+
+    .chosse-plus-tooltip {
+        display: none;
+        /*display: block;*/
+        width: auto;
+        min-width: 107px;
+        position: absolute;
+        top: -171%;
+        left: -50%;
+        padding: 5px 5px 0px 5px;
+        z-index: 3;
+        text-align: center;
+        background: rgba(44, 95, 102, 1);
+    }
+
+    .checkbox-box .chosse-plus-box:hover .chosse-plus-tooltip {
+        display: block;
+    }
+
+    .chosse-plus-tooltip:after {
+        display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0 0 0 -10px;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 7px solid rgba(44, 95, 102, 1);
+        position: relative;
+        left: 50%;
+        bottom: -7px;
+    }
+
+    .chosse-plus-tooltip p {
+        display: block;
+        width: 100%;
+        font-family: "Myriad Pro", Arial, Verdana, sans-serif;
+        font-size: 14px;
+        line-height: 15px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    .article-with-table {
+
+    }
+
+    .article-with-table .three-cols {
+
+    }
+
+    .article-with-table .three-cols .col {
+
+    }
+
+    .article-with-table .three-cols .col-1 {
+
+    }
+
+    .article-with-table .three-cols .col-2 {
+
+    }
+
+    .article-with-table .three-cols .col-3 {
+
+    }
+
+    .article-with-table .blue-link {
+
+    }
+
+    .table-three-cols-manufacturer {
+
+    }
+
+    .table-manufacturer-row {
+
+    }
+
+    .table-manufacturer-row .col {
+
+    }
+
+    .table-manufacturer-row .col-1 {
+
+    }
+
+    .table-manufacturer-row .col-2 {
+
+    }
+
+    .table-manufacturer-row .col-3 {
+
+    }
+
+    .table-manufacturer-row .col h3 {
+
+    }
+
+    .table-manufacturer-row .col p {
+
+    }
+
+    .table-manufacturer-row input[type=checkbox] {
+
+    }
+
+    .table-manufacturer-row button[type='button'] {
+
+    }
+
+    
+
+
+
+
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
@@ -5415,11 +5706,6 @@ footer {
 }
 
 .footer-row-1 {
-/*    background: rgb(101,136,208);
-    background: -moz-linear-gradient(top,  rgba(101,136,208,1) 0%, rgba(72,98,149,1) 100%);
-    background: -webkit-linear-gradient(top,  rgba(101,136,208,1) 0%,rgba(72,98,149,1) 100%);
-    background: linear-gradient(to bottom,  rgba(101,136,208,1) 0%,rgba(72,98,149,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6588d0', endColorstr='#486295',GradientType=0 );*/
     background: rgb(85,183,197);
     background: -moz-linear-gradient(top,  rgba(85,183,197,1) 0%, rgba(90,194,209,1) 100%);
     background: -webkit-linear-gradient(top,  rgba(85,183,197,1) 0%,rgba(90,194,209,1) 100%);

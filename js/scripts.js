@@ -129,6 +129,22 @@ $(function() {
 
     });
 
+// ---------------------------------------------------------
+
+    var indexFadeBox;
+
+    $(function() {
+
+        $(".close-fade-box-btn").click(function() {
+
+            indexFadeBox = $(".close-fade-box-btn").index(this);
+
+            $(".fade-box:eq("+ indexFadeBox +")").fadeOut(300);
+
+        });
+
+    });
+
 
 // ---------------------------------------------------------
 

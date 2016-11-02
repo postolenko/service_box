@@ -15,3 +15,4 @@
 # http://postolenko.github.io/service_box/zayavki_dobavit_zayavky.html
 # http://postolenko.github.io/service_box/authorisation.html
 # http://postolenko.github.io/service_box/moi_obyavleniya_contakti_servisnogo_tsentra.html
+# http://postolenko.github.io/service_box/moi_obyavleniya_contakti_servisnogo_tsentra_2.html
