@@ -418,6 +418,111 @@
 	}*/
 
 
+	.input-box {
+		padding: 0;
+	}
+
+	.contacts-sc-form .input-box label {
+		width: 100%;
+		text-align: left;
+		padding: 5px 0 7px 0;
+	}
+
+	.contacts-sc-form .input-box input {
+		width: 100%;
+		text-align: left;
+		padding: 0 1%;
+		margin: 0;
+	}
+
+	.select2.select2-container.select2-container--default {
+		width: 100% !important;
+		height: 38px !important;
+		margin: 0 !important;
+	}
+
+	.input-box.with-orange-btn .orange-btn-box {
+		width: 30%;
+		min-width: 200px;
+		padding: 5px 1% 5px 0;
+	}
+
+	.inputs-2 .checkbox-box {
+		padding: 10px 0;
+	}
+
+	.input-box.input-middle-width .account-blue-link {
+		margin: 10px 0 4px 0%;
+		padding: 5px 10px;
+		width: 61%;
+		max-width: 61%;
+	}
+
+	.help-box p {
+		padding: 10px 0 0 0;
+	}
+
+	.contacts-sc-form .textarea-box textarea {
+	    width: 100%;
+	    max-width: 100%;
+	    margin: 0;
+	}
+
+	.choose-time .choose-time-col-1 {
+	    width: 100%;
+	}
+
+	.choose-time .choose-time-col-1 label {
+	    width: 100%;
+	    width: 100%;
+	    text-align: left;
+	   	padding: 5px 7% 5px 0;
+	}
+
+	.choose-time .choose-time-col-2 {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.choose-time-row {
+	    padding: 5px 0;
+	}
+
+	.choose-time-row .col-1 {
+	    width: 100%;
+	}
+
+	.choose-time-row .col-2 {
+	    width: 33%;
+	}
+
+	.choose-time-row .col-4 {
+	    width: 33%;
+	}
+
+	.choose-time-row .col-5 {
+		width: 27%;
+		text-align: right;
+	}
+
+/*	.input-box .select2.select2-container.select2-container--default {
+	    width: 100% !important;
+	    height: 38px !important;
+	    margin: 0;
+	}
+
+	.input-box .select2.select2-container.select2-container--default.select2-container--below.select2-container--focus {
+		width: 100% !important;
+		height: 38px !important;
+		margin: 0;
+	}
+
+	.input-box .select2.select2-container.select2-container--default.select2-container--below.select2-container--open {
+		width: 100% !important;
+		height: 38px !important;
+		margin: 0;
+	}*/
+
 	.footer-row-1 .footer-col {
 		width: 50%;
 	}
@@ -733,6 +838,34 @@
 
 	.checkbox-box input[type=checkbox] + label:before {
 	    top: -3px;
+	}
+
+
+	.choose-time-row .col-1 {
+	    width: 100%;
+	    padding: 0 0 10px 0;
+	}
+
+	.choose-time-row .col-1 .checkbox-box {
+	    padding: 5px 0;
+	}
+
+	.choose-time-row .col-2 {
+	    width: 46%;
+	}
+
+	.choose-time-row .col-4 {
+	    width: 46%;
+	}
+
+	.choose-time-row .col-5 {
+	    width: 44%;
+	    text-align: left;
+	}
+
+	.input-box.input-middle-width .account-blue-link {
+		width: 100%;
+		max-width: 100%;
 	}
 
 

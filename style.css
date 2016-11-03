@@ -4933,12 +4933,14 @@ p.quote:before {
     .choose-time-col-1 label {
         display: inline-block;
         vertical-align: top;
+        width: 100%;
         font-family: "Myriad Pro", Arial, Verdana, sans-serif;
         font-size: 16px;
         line-height: 18px;
         font-weight: normal;
         color: #171717;
         text-align: right;
+        padding: 0 7% 0 0;
     }
 
     .choose-time-row {
@@ -5391,7 +5393,7 @@ p.quote:before {
         text-align: center;
     }
 
-    .help-box span {
+    .help-box p {
         display: block;
         font-family: "Myriad Pro", Arial, Verdana, sans-serif;
         font-size: 16px;
