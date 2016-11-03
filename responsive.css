@@ -717,12 +717,30 @@
 	}
 
 	.input-box .blue-btn {
-	    min-width: 170px;
-	    margin: 15px 0 0 0%;
+	    min-width: 200px;
+	    margin: 15px 0 0 0;
 	}
 
 	.step-form .radioboxes-row {
 		padding: 6px 0;
+	}
+
+	.h2-gradient.with-selected .col-1 {
+		width: 100%;
+	}
+
+	.h2-gradient.with-selected .col-2 {
+	    width: 100%;
+	    text-align: left;
+	}
+
+	.h2-gradient.with-selected .col-2 .account-blue-link {
+	    margin: 0 2%;
+	}
+
+	.select2-container--default {
+		position: relative;
+		top: 3px;
 	}
 
 	.footer-row-1 .footer-col {
@@ -1113,6 +1131,11 @@
 		float: none;
 	}
 
+	.h2-gradient.with-selected .col-2 .account-blue-link {
+		width: 200px;
+		margin: 5px 5px 5px 0;
+		padding: 7px 5px;
+	}
 
 	.footer-row-1 .footer-col {
 		width: 100%;
