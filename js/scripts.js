@@ -25,6 +25,8 @@ $(document).ready(function() {
 
         getRadiboxTabHeight();
 
+        getPopupPosition();
+
     });
 
 
@@ -38,6 +40,8 @@ $(document).ready(function() {
 
 
     getRadiboxTabHeight();
+
+    getPopupPosition();
 
 
  // ---------------------------------------------------------
@@ -246,6 +250,40 @@ $(function() {
 
     });
 
+
+// ---------------------------------------------------------
+
+    var closePopupBtnIndex;
+    var popupIdAttr;
+
+    $(".popup-bg, .close-popup").click(function() {
+
+        closePopupBtnIndex = $(".close-popup").index(this);
+
+        $(".popup-sect:eq("+ closePopupBtnIndex +")").fadeOut(300);
+
+    });
+
+    $(".fadeIn-popup").click(function() {
+
+        popupIdAttr = $(".fadeIn-popup").attr("id");
+
+        $(".sect-" + popupIdAttr).fadeIn(300);
+
+        getPopupPosition();
+
+    });
+
+// ---------------------------------------------------------
+
+
+function getPopupPosition() {
+
+    $(".popup-box").css({"top" : ( $(window).height() - $(".popup-box").height() ) / 2 + "px"});
+
+}
+
+    
 // ---------------------------------------------------------
 
 function getRadiboxTabHeight() {
