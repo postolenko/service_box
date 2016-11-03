@@ -554,6 +554,35 @@
 	    line-height: 22px;
 	}
 
+	.additional-setings-table.two-cols {
+	    display: block;
+	}
+
+	.additional-setings-table.two-cols .col-1 {
+		display: inline-block;
+		vertical-align: top;
+	    width: 100% !important;
+	    text-align: left;
+	    padding: 10px 0;
+	}
+
+	.additional-setings-table.two-cols .col-2 {
+		display: inline-block;
+		vertical-align: top;
+	    width: 100% !important;
+	    max-width: 100% !important;
+	    text-align: left;
+	}
+
+	.additional-setings-row.email-input-box {
+		padding: 7px 0;
+	}
+
+	.additional-setings-row.email-input-box input[type=email] {
+		width: 100%;
+		margin: 5px 0;
+	}
+
 	.footer-row-1 .footer-col {
 		width: 50%;
 	}
