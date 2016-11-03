@@ -355,7 +355,7 @@ select {
     line-height: 32px;
     font-weight: normal;
     color: #7b7b7b;
-    min-height: 34px;
+    min-height: 34px !important;
     background-image: url(img/selec_btn_bg.jpg);
     background-repeat: no-repeat;
     background-position: right 0;
@@ -6291,7 +6291,7 @@ p.quote:before {
     color: #7b7b7b;
 }
 
-.select-box span {
+.select-box p {
     display: block;
     font-family: "Myriad Pro", Arial, Verdana, sans-serif;
     font-size: 16px;

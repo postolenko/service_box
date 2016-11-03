@@ -24,9 +24,13 @@
 
 	<link rel="stylesheet" href="vendors/css/jquery.mCustomScrollbar.css" />
 
+	<link href="vendors/css/select2.css" rel="stylesheet" />
+
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 
 	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<script src="vendors/js/select2.js"></script>
 
 	<script type="text/javascript" src="slick/slick.js"></script>
 
@@ -168,7 +172,7 @@
 
 											<div class="tab-content-col">
 
-												<select>
+												<select class="select-1">
 
 													<option>город не выбран</option>
 													<option>Значение 1</option>
@@ -182,7 +186,7 @@
 
 											<div class="tab-content-col">
 
-												<select>
+												<select class="select-2">
 
 													<option>город не выбран</option>
 													<option>Значение 1</option>
@@ -196,7 +200,7 @@
 
 											<div class="tab-content-col">
 
-												<select>
+												<select class="select-3">
 
 													<option>город не выбран</option>
 													<option>Значение 1</option>
@@ -912,38 +916,52 @@
 
 		<script>
 
-		$(".slider-questions").slick({
-			  infinite: true,
-			  slidesToShow: 3,
-			  slidesToScroll: 2,
-			  autoplay: true,
-			  autoplaySpeed: 7000,
-			  centerMode: true,  			  
-  			  responsive: [
-  			  	{
-			      breakpoint: 768,
-			      settings: {
-			        slidesToShow: 2
-			      }
-			    },
-			    {
-			      breakpoint: 480,
-			      settings: {
-			        slidesToShow: 1
-			      }
-			    }
-			  ]
+			$(".slider-questions").slick({
+				  infinite: true,
+				  slidesToShow: 3,
+				  slidesToScroll: 2,
+				  autoplay: true,
+				  autoplaySpeed: 7000,
+				  centerMode: true,  			  
+	  			  responsive: [
+	  			  	{
+				      breakpoint: 768,
+				      settings: {
+				        slidesToShow: 2
+				      }
+				    },
+				    {
+				      breakpoint: 480,
+				      settings: {
+				        slidesToShow: 1
+				      }
+				    }
+				  ]
+				});
+
+			(function($){
+
+				$(window).on("load",function(){
+
+				    $(".main-nav-list").mCustomScrollbar();
+
+				});
+
+			})(jQuery);
+
+
+			$(".select-1").select2({
+				placeholder: "город не выбран"
 			});
 
-		(function($){
-
-			$(window).on("load",function(){
-
-			    $(".main-nav-list").mCustomScrollbar();
-
+			$(".select-2").select2({
+				placeholder: "город не выбран"
 			});
 
-		})(jQuery);
+			$(".select-3").select2({
+				placeholder: "город не выбран"
+			});
+
 
 		</script>
 	

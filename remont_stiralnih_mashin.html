@@ -24,9 +24,13 @@
 
 	<link rel="stylesheet" href="vendors/css/jquery.mCustomScrollbar.css" />
 
+	<link href="vendors/css/select2.css" rel="stylesheet" />
+
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 
 	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<script src="vendors/js/select2.js"></script>
 
 	<script type="text/javascript" src="slick/slick.js"></script>
 
@@ -182,7 +186,7 @@
 												
 												<h3>Город</h3>
 
-												<select>
+												<select class="select-4">
 													
 													<option>Москва</option>
 													<option>Город 2</option>
@@ -222,7 +226,7 @@
 
 												</div>
 
-												<select>
+												<select class="select-5">
 													
 													<option>Выберите</option>
 													<option>Выбор 2</option>
@@ -262,7 +266,7 @@
 
 												</div>
 
-												<select>
+												<select class="select-6">
 													
 													<option>Стиральные машины</option>
 													<option>Категория 2</option>
@@ -1440,44 +1444,65 @@
 
 		<script>
 
-		$(".slider-questions").slick({
-			  infinite: true,
-			  slidesToShow: 3,
-			  slidesToScroll: 2
-			  // autoplay: true,
-			  // centerMode: true
-  			  // autoplaySpeed: 7000
-  		// 	  responsive: [
-				// {
-			 //      breakpoint: 1024,
-			 //      settings: {
-				// 	slidesToShow: 3,
-				// 	slidesToScroll: 1,
-				// 	vertical: false
-			 //      }
-			 //    },
-			 //    {
-			 //      breakpoint: 600,
-			 //      settings: {
-			 //        slidesToShow: 1,
-			 //        vertical: false
-			 //      }
-			 //    }
-			 //  ]
+			$(".slider-questions").slick({
+				  infinite: true,
+				  slidesToShow: 3,
+				  slidesToScroll: 2,
+				  autoplay: true,
+				  autoplaySpeed: 7000,
+				  centerMode: true,  			  
+	  			  responsive: [
+	  			  	{
+				      breakpoint: 768,
+				      settings: {
+				        slidesToShow: 2
+				      }
+				    },
+				    {
+				      breakpoint: 480,
+				      settings: {
+				        slidesToShow: 1
+				      }
+				    }
+				  ]
+				});
+
+			(function($){
+
+				$(window).on("load",function(){
+
+				    $(".main-nav-list").mCustomScrollbar();
+
+				    $(".aside-wrapp.with-scroll").mCustomScrollbar();
+
+				});
+
+			})(jQuery);
+
+
+			$(".select-1").select2({
+				placeholder: "город не выбран"
 			});
 
-		(function($){
-
-			$(window).on("load",function(){
-
-				$(".main-nav-list").mCustomScrollbar();
-
-			    $(".aside-wrapp.with-scroll").mCustomScrollbar();
-
+			$(".select-2").select2({
+				placeholder: "город не выбран"
 			});
 
-		})(jQuery);
+			$(".select-3").select2({
+				placeholder: "город не выбран"
+			});
 
+			$(".select-4").select2({
+				placeholder: "Москва"
+			});
+
+			$(".select-5").select2({
+				placeholder: "Выберите"
+			});
+
+			$(".select-6").select2({
+				placeholder: "Стиральные машины"
+			});
 		
 
 		</script>
