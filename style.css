@@ -5772,20 +5772,19 @@ p.quote:before {
     }
 
     .table-three-cols-manufacturer {
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
         margin: -4px 0 0 0;
     }
 
     .table-manufacturer-row {
-        display: table;
+        display: table-row;
         width: 100%;
-/*        font-size: 0;
-        line-height: 0;*/
-        border-collapse: collapse;
         border-top: 1px solid #dcdcdc;
     }
 
     .table-manufacturer-row .col {
-        /*display: inline-block;*/
         display: table-cell;
         vertical-align: middle;
         padding: 11px 12px;
