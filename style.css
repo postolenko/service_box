@@ -6104,9 +6104,9 @@ p.quote:before {
     width: 25%;
 }
 
-.step-content .input-box input[type=text] + span,
-.step-content .input-box input[type=password] + span,
-.step-content .input-box input[type=email] + span {
+.step-content .input-box input[type=text] + p,
+.step-content .input-box input[type=password] + p,
+.step-content .input-box input[type=email] + p {
     display: block;
     padding: 5px 0 0 13%;
     font-family: "Myriad Pro", Arial, Verdana, sans-serif;

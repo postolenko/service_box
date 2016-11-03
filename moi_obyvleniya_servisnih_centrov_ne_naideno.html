@@ -402,18 +402,6 @@
 				  ]
 				});
 
-			(function($){
-
-				$(window).on("load",function(){
-
-				    $(".main-nav-list").mCustomScrollbar();
-
-				    $(".aside-wrapp.with-scroll").mCustomScrollbar();
-
-				});
-
-			})(jQuery);
-
 
 			$(".select-1").select2({
 				placeholder: "город не выбран"
@@ -506,6 +494,26 @@
 			$(".select-23").select2({
 				placeholder: "Выберите производителя"
 			});
+
+
+			(function($){
+
+				$(window).on("load",function(){
+
+				    $(".main-nav-list").mCustomScrollbar();
+
+				    $(".aside-wrapp.with-scroll").mCustomScrollbar();
+
+				    $(".with-gorisontal-scroll").mCustomScrollbar({
+				    	
+				    	axis:"x"
+				    	
+				    });
+
+				});
+
+			})(jQuery);
+
 		
 
 
