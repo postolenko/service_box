@@ -628,12 +628,101 @@
 		padding: 10px 0 15px 0;
 	}
 
+	.step-2-links-box.two-cols .col-1 {
+	    text-align: left;
+	    width: 100%;
+	    padding: 5px 0 0 0;
+	}
+
+	.step-2-links-box.two-cols .col-2 {
+	    text-align: center;
+	    width: 100%;
+	}
+
 	.input-box label.important:after {
 	    display: inline-block;
 	    vertical-align: top;
 	    content: "*";
 	    position: relative;
 	    right: -4px;
+	}
+
+	.step-content .input-box {
+	    padding: 10px 0;
+	}
+
+	.step-content .input-box label {
+		width: 100%;
+		text-align: left;
+		padding: 10px 0;
+	}
+
+	.step-content .input-box input[type=text],
+	.step-content .input-box input[type=password],
+	.step-content .input-box input[type=email] {
+		width: 100%;
+	}
+
+	.step-content .input-box input[type=text] + p,
+	.step-content .input-box input[type=password] + p,
+	.step-content .input-box input[type=email] + p {
+	    display: block;
+	    padding: 5px 0 0 0;
+	}
+
+	.step-content .select2.select2-container.select2-container--default {
+	    width: 100% !important;
+	    height: 38px !important;
+	}
+
+	.step-content .select-box label {
+		display: block;
+	    width: 100%;
+	    text-align: left;
+	    padding: 0 0 10px 0;
+	}
+
+	.step-content .select-box p {
+		display: block;
+	    padding: 7px 0 0 0;
+	}
+
+	.choose-time-row .col-1 p {
+		width: 100%;
+		padding: 5px 0 7px 0;
+	}
+
+	.choose-time-row .col-2,
+	.choose-time-row .col-4 {
+		width: 47%;
+	}
+
+	.step-content .select2.select2-container.select2-container--default {
+		width: 100% !important;
+		min-width: 270px;
+		height: 38px !important;
+	}
+
+	.step-content .choose-time-row .select2.select2-container.select2-container--default {
+		min-width: 40%;
+	}
+
+	.step-form .textarea-box.two-cols .col-1 {
+	    width: 100%;
+	}
+
+	.step-form .textarea-box.two-cols .col-2 {
+		width: 100%;
+		padding: 0;
+	}
+
+	.input-box .blue-btn {
+	    min-width: 170px;
+	    margin: 15px 0 0 0%;
+	}
+
+	.step-form .radioboxes-row {
+		padding: 6px 0;
 	}
 
 	.footer-row-1 .footer-col {
@@ -1016,6 +1105,12 @@
 	.steps-link-list li {
 		width: 100%;
 		padding: 5px .5%;
+	}
+
+	.step-form .prev-next-step {
+		width: 100%;
+		margin: 8px 0;
+		float: none;
 	}
 
 
