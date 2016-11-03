@@ -6897,6 +6897,7 @@ a.payment-system-link:hover {
 .sect-popup-2 .popup-box {
     width: 52%;
     max-width: 500px;
+    min-width: 310px;
 }
 
 
